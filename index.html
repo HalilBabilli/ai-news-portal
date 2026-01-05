@@ -7,13 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #000;
-            color: #e2e8f0;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #000; color: #e2e8f0; min-height: 100vh; line-height: 1.6; }
         .bg-glow { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
         .bg-glow::before { content: ''; position: absolute; top: -400px; right: -400px; width: 800px; height: 800px; background: rgba(79, 70, 229, 0.1); border-radius: 50%; filter: blur(100px); }
         .bg-glow::after { content: ''; position: absolute; bottom: -300px; left: -300px; width: 600px; height: 600px; background: rgba(139, 92, 246, 0.1); border-radius: 50%; filter: blur(100px); }
@@ -121,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası <span>AI Portal</span></h1>
-                        <p>Updated: January 5, 2026</p>
+                        <p>Updated: January 05, 2026 at 01:54 UTC</p>
                     </div>
                 </div>
             </div>
@@ -197,168 +191,255 @@
 
         <footer>
             <div class="footer-inner">
-                <span>İş Dünyası AI Portal • Curated AI News</span>
-                <span>TechCrunch • IBM • Euronews • CNBC • Motley Fool</span>
+                <span>İş Dünyası AI Portal • Auto-updated daily at 7:00 AM CET</span>
+                <span>Powered by Claude AI</span>
             </div>
         </footer>
     </div>
 
     <script>
         const newsData = [
-            {
-                source: "TechCrunch",
-                date: "Jan 2, 2026",
-                title: "Anthropic's MCP Becomes Industry Standard as OpenAI and Microsoft Embrace Protocol",
-                summary: "Anthropic's Model Context Protocol (MCP), dubbed 'USB-C for AI', lets AI agents connect to external tools like databases and APIs. OpenAI and Microsoft have publicly embraced MCP, and Anthropic donated it to the Linux Foundation's new Agentic AI Foundation. Google has begun standing up managed MCP servers.",
-                url: "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
-                scores: { capability: 9, economic: 8, irreversibility: 9, timeline: 8, systemic: 6 },
-                weightedScore: 8.3,
-                primaryDriver: "irreversibility"
-            },
-            {
-                source: "Motley Fool",
-                date: "Jan 3, 2026",
-                title: "Nvidia's $65 Billion Q4 Forecast Signals Continued AI Boom",
-                summary: "Nvidia expects fiscal Q4 revenue of $65 billion, a 65% year-over-year jump. The company has visibility to half a trillion dollars in Blackwell and Vera Rubin revenue through end of 2026. Anthropic projects revenue run rate to hit $26 billion in 2026, up from $9 billion.",
-                url: "https://www.fool.com/investing/2026/01/03/nvidias-65-billion-forecast-sends-a-clear-message/",
-                scores: { capability: 7, economic: 10, irreversibility: 6, timeline: 8, systemic: 5 },
-                weightedScore: 7.5,
-                primaryDriver: "economic"
-            },
-            {
-                source: "TechCrunch",
-                date: "Jan 2, 2026",
-                title: "World Models Emerge as Next AI Frontier: LeCun Seeks $5B Valuation",
-                summary: "Yann LeCun left Meta to start his own world model lab, reportedly seeking $5 billion valuation. World models learn how things move in 3D spaces to make predictions. Google DeepMind's Genie, Fei-Fei Li's World Labs (Marble), and General Intuition ($134M seed) are all pushing this frontier.",
-                url: "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
-                scores: { capability: 10, economic: 7, irreversibility: 7, timeline: 9, systemic: 5 },
-                weightedScore: 7.9,
-                primaryDriver: "capability"
-            },
-            {
-                source: "IBM",
-                date: "Jan 1, 2026",
-                title: "IBM: 2026 Will Mark First Quantum Computer to Outperform Classical Systems",
-                summary: "IBM states 2026 will mark the first time a quantum computer solves a problem better than all classical-only methods. This milestone will unlock breakthroughs in drug development, materials science, and financial optimization. 'We've moved past theory,' says IBM's quantum partnerships director.",
-                url: "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
-                scores: { capability: 10, economic: 8, irreversibility: 9, timeline: 10, systemic: 7 },
-                weightedScore: 8.9,
-                primaryDriver: "capability"
-            },
-            {
-                source: "Euronews",
-                date: "Jan 1, 2026",
-                title: "Google's Gemini 3 Triggers 'Code Red' at OpenAI for GPT-5 Development",
-                summary: "Google's new Gemini 3 model has reportedly caused OpenAI to sound alarm for urgent GPT-5 improvements. Gemini 3.0 Pro ranks as top LLM on LMArena's Leaderboard. The AI race intensifies as companies scramble to maintain competitive edge in frontier model development.",
-                url: "https://www.euronews.com/next/2026/01/01/from-ai-slop-to-world-models-bubbles-and-small-models-what-to-expect-from-ai-in-2026",
-                scores: { capability: 9, economic: 7, irreversibility: 6, timeline: 10, systemic: 5 },
-                weightedScore: 7.6,
-                primaryDriver: "timeline"
-            },
-            {
-                source: "CNBC",
-                date: "Jan 2, 2026",
-                title: "Chip Stocks Rally as AI Sector Posts Third Straight Winning Year",
-                summary: "Micron and ASML jumped 10% and 9% respectively to start 2026. The VanEck Semiconductor ETF gained nearly 49% in 2025, its third consecutive winning year. Michael Burry revealed short positions in Nvidia and Palantir, warning of AI bubble, but momentum continues.",
-                url: "https://www.cnbc.com/2026/01/02/chipmakers-2026-ai-trade.html",
-                scores: { capability: 5, economic: 10, irreversibility: 5, timeline: 6, systemic: 6 },
-                weightedScore: 6.5,
-                primaryDriver: "economic"
-            },
-            {
-                source: "NBC News",
-                date: "Jan 3, 2026",
-                title: "DeepSeek Paper Sparks Rally as China Shows More Efficient AI Development Path",
-                summary: "Chinese AI stocks rallied after DeepSeek published research showing AI could be developed more efficiently. The DeepSeek-R1 model from Chinese frontier labs has taken the world by storm. Two AI IPOs in Asia further fueled momentum in semiconductor and AI stocks.",
-                url: "https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902",
-                scores: { capability: 8, economic: 7, irreversibility: 7, timeline: 9, systemic: 6 },
-                weightedScore: 7.5,
-                primaryDriver: "timeline"
-            },
-            {
-                source: "IBM",
-                date: "Jan 1, 2026",
-                title: "AI Shifts from Personal Productivity to Team Workflow Orchestration",
-                summary: "Three trends will move AI beyond personal productivity in 2026: shift to team and workflow orchestration, systems that anticipate needs rather than follow instructions, and democratization of AI agent creation for everyday business users, not just developers.",
-                url: "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
-                scores: { capability: 8, economic: 8, irreversibility: 7, timeline: 7, systemic: 8 },
-                weightedScore: 7.6,
-                primaryDriver: "economic"
-            },
-            {
-                source: "Euronews",
-                date: "Jan 1, 2026",
-                title: "AI Psychosis Concerns Rise: Lawsuit Alleges ChatGPT Was 'Suicide Coach'",
-                summary: "A lawsuit against OpenAI alleged ChatGPT encouraged a 16-year-old to take his own life. MIT professor Max Tegmark warns 2026 could bring more harm as models become more powerful. Growing pushback in US against unleashing AI without regulation.",
-                url: "https://www.euronews.com/next/2026/01/01/from-ai-slop-to-world-models-bubbles-and-small-models-what-to-expect-from-ai-in-2026",
-                scores: { capability: 4, economic: 5, irreversibility: 7, timeline: 5, systemic: 10 },
-                weightedScore: 5.9,
-                primaryDriver: "systemic"
-            },
-            {
-                source: "TechCrunch",
-                date: "Jan 2, 2026",
-                title: "Physical AI Goes Mainstream: Smart Glasses and Wearables Lead the Way",
-                summary: "Ray-Ban Meta glasses now ship assistants that answer questions about what you see. AI-powered health rings and smartwatches normalize always-on, on-body inference. Connectivity providers optimizing networks for this new wave of AI devices.",
-                url: "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
-                scores: { capability: 8, economic: 7, irreversibility: 6, timeline: 7, systemic: 7 },
-                weightedScore: 7.1,
-                primaryDriver: "capability"
-            },
-            {
-                source: "Motley Fool",
-                date: "Jan 4, 2026",
-                title: "Google Cloud Becomes Top Choice for AI Unicorns",
-                summary: "Nearly all AI unicorns (startups with $1B+ valuation) now use Google Cloud. Alphabet's cloud is fastest-growing of the 'big three' providers. Apple used Google TPUs to train Apple Intelligence models; Anthropic uses TPUs to keep costs lower than GPU alternatives.",
-                url: "https://www.fool.com/investing/2026/01/04/3-artificial-intelligence-stocks-to-buy-in-2026-th/",
-                scores: { capability: 6, economic: 9, irreversibility: 6, timeline: 6, systemic: 5 },
-                weightedScore: 6.6,
-                primaryDriver: "economic"
-            },
-            {
-                source: "Euronews",
-                date: "Jan 1, 2026",
-                title: "'AI Slop' Named Word of 2025 as Peak Data Warning Looms",
-                summary: "Merriam-Webster named 'slop' or 'AI slop' word of 2025—low-quality AI-generated content. AI leaders warn we've reached 'peak data' for training LLMs. This limitation may drive shift to world models that learn from video and simulation rather than text.",
-                url: "https://www.euronews.com/next/2026/01/01/from-ai-slop-to-world-models-bubbles-and-small-models-what-to-expect-from-ai-in-2026",
-                scores: { capability: 6, economic: 5, irreversibility: 7, timeline: 8, systemic: 7 },
-                weightedScore: 6.5,
-                primaryDriver: "timeline"
-            },
-            {
-                source: "IBM",
-                date: "Jan 1, 2026",
-                title: "Open-Source AI Defined by Chinese Model Releases and Governance Push",
-                summary: "Three forces define open-source AI in 2026: global model diversification led by Chinese multilingual releases, interoperability as competitive axis with frameworks aligning on shared standards, and hardened governance with security-audited releases and transparent data pipelines.",
-                url: "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
-                scores: { capability: 7, economic: 6, irreversibility: 8, timeline: 7, systemic: 6 },
-                weightedScore: 6.9,
-                primaryDriver: "irreversibility"
-            },
-            {
-                source: "Motley Fool",
-                date: "Jan 3, 2026",
-                title: "UN Report: Global AI Market Could Reach $4.8 Trillion by 2033",
-                summary: "United Nations Trade and Development projects AI market expansion of 25-fold within a decade—from $189 billion in 2023 to $4.8 trillion by 2033. Nvidia CEO Jensen Huang dismissed AI bubble concerns, citing three major platform shifts driving sustained growth.",
-                url: "https://www.fool.com/investing/2026/01/03/nvidias-65-billion-forecast-sends-a-clear-message/",
-                scores: { capability: 5, economic: 10, irreversibility: 6, timeline: 7, systemic: 7 },
-                weightedScore: 6.9,
-                primaryDriver: "economic"
-            },
-            {
-                source: "TechCrunch",
-                date: "Jan 2, 2026",
-                title: "2026: The Year AI Moves from Hype to Pragmatism",
-                summary: "Focus shifts from building larger language models to making AI usable. Industry evolving from brute-force scaling to new architectures, from flashy demos to targeted deployments, from agents promising autonomy to ones that actually augment work. 'The party isn't over, but the industry is sobering up.'",
-                url: "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
-                scores: { capability: 7, economic: 7, irreversibility: 6, timeline: 7, systemic: 6 },
-                weightedScore: 6.7,
-                primaryDriver: "capability"
-            }
-        ];
-
-        // Sort by weighted score
-        newsData.sort((a, b) => b.weightedScore - a.weightedScore);
+  {
+    "source": "Bloomberg",
+    "date": "Jan 2, 2026",
+    "title": "DeepSeek Touts New Training Method as China Pushes AI Efficiency",
+    "summary": "DeepSeek published a paper outlining Manifold-Constrained Hyper-Connections, a more efficient approach to developing AI that improves scalability while reducing computational and energy demands. This illustrates China's AI industry effort to compete with OpenAI despite limited access to Nvidia chips.",
+    "url": "https://www.bloomberg.com/news/articles/2026-01-02/deepseek-touts-new-training-method-as-china-pushes-ai-efficiency",
+    "scores": {
+      "capability": 9,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 9,
+      "systemic": 7
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "IBM",
+    "date": "Jan 1, 2026",
+    "title": "IBM Quantum Safe Milestone - First Quantum Computer to Outperform Classical by 2026",
+    "summary": "IBM publicly announced 2026 will mark the first time a quantum computer will outperform a classical computer in practical applications. This quantum advantage milestone could unlock breakthroughs in drug development, materials science, and financial optimization.",
+    "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
+    "scores": {
+      "capability": 10,
+      "economic": 7,
+      "irreversibility": 9,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Jan 2, 2026",
+    "title": "In 2026, AI will move from hype to pragmatism",
+    "summary": "Industry experts predict 2026 as a transition year from brute-force scaling to practical applications. AI will shift toward smaller, targeted deployments and real agentic workflows, moving beyond flashy demos to actual productivity gains.",
+    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 7.0,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Neuron Daily",
+    "date": "Jan 5, 2026",
+    "title": "DeepSeek Just Fixed What Breaks $100M AI Training Runs",
+    "summary": "DeepSeek's mHC architecture solves critical stability issues in Transformer training that previously caused expensive failures. The breakthrough could make training large models both more stable and efficient, potentially signaling their next major model release.",
+    "url": "https://www.theneurondaily.com/p/deepseek-just-fixed-what-breaks-100m-ai-training-runs",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 5
+    },
+    "weightedScore": 7.0,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
+    "date": "Jan 3, 2026",
+    "title": "Chip stocks rally to start 2026 after third-straight winning year",
+    "summary": "Chipmaking stocks rallied as investors piled into AI-fueled semiconductor sector. Major gains in Micron Technology, ASML, and other chip companies reflect continued confidence in AI infrastructure buildout despite bubble concerns.",
+    "url": "https://www.cnbc.com/2026/01/02/chipmakers-2026-ai-trade.html",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.2,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Motley Fool",
+    "date": "Jan 3, 2026",
+    "title": "Nvidia's $65 Billion Forecast Sends a Clear Message About the AI Boom",
+    "summary": "Nvidia expects $65 billion in Q4 revenue and has visibility to $500 billion in Blackwell and Rubin revenue through 2026. CEO Jensen Huang directly addressed AI bubble concerns, citing three major platform shifts driving continued growth.",
+    "url": "https://www.fool.com/investing/2026/01/03/nvidias-65-billion-forecast-sends-a-clear-message/",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 6.0,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "NBC News",
+    "date": "Jan 3, 2026",
+    "title": "AI stocks jump amid broadly positive outlook for 2026 markets",
+    "summary": "AI stocks started 2026 with gains, fueled by news about DeepSeek's efficiency breakthrough and continued optimism about the AI boom. Major AI-related companies like Nvidia, Broadcom, and Taiwan Semiconductor saw significant jumps.",
+    "url": "https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902",
+    "scores": {
+      "capability": 3,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 5,
+      "systemic": 5
+    },
+    "weightedScore": 5.2,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Euronews",
+    "date": "Jan 1, 2026",
+    "title": "From 'AI slop' to world models, bubbles and small models: What to expect from AI in 2026",
+    "summary": "Analysis of AI trends for 2026 including growing pushback against 'AI slop', emergence of world models for robotics and gaming, and potential clashes over AI regulation. Experts warn of more powerful AI agents and possible harm to vulnerable users.",
+    "url": "https://www.euronews.com/next/2026/01/01/from-ai-slop-to-world-models-bubbles-and-small-models-what-to-expect-from-ai-in-2026",
+    "scores": {
+      "capability": 5,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 5.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Motley Fool",
+    "date": "Jan 4, 2026",
+    "title": "3 Artificial Intelligence Stocks to Buy in 2026 That Could Be Better Picks Than Palantir",
+    "summary": "Investment analysis comparing Alphabet, Micron, and Nvidia to Palantir as AI stock picks. Highlights Google's comprehensive AI portfolio, Micron's critical memory technology, and Nvidia's continued GPU dominance with similar growth rates but better valuations.",
+    "url": "https://www.fool.com/investing/2026/01/04/3-artificial-intelligence-stocks-to-buy-in-2026-th/",
+    "scores": {
+      "capability": 3,
+      "economic": 6,
+      "irreversibility": 4,
+      "timeline": 4,
+      "systemic": 4
+    },
+    "weightedScore": 4.5,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Financial Markets",
+    "date": "Jan 2, 2026",
+    "title": "The DeepSeek Disruption: How a $5 Million Model Shattered the AI Scaling Myth",
+    "summary": "Analysis of how DeepSeek-V3's $5.6 million training cost versus $100+ million for competitors has disrupted AI scaling assumptions. The model's efficiency has democratized high-end AI and shifted industry focus from hardware quantity to architectural efficiency.",
+    "url": "https://markets.financialcontent.com/wral/article/tokenring-2026-1-2-the-deepseek-disruption-how-a-5-million-model-shattered-the-ai-scaling-myth",
+    "scores": {
+      "capability": 4,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 5
+    },
+    "weightedScore": 5.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "IEEE Spectrum",
+    "date": "Jan 2, 2026",
+    "title": "Neutral Atom Quantum Computing: 2026's Big Leap",
+    "summary": "Quantum computing aims for error correction by 2026, with Microsoft, Atom Computing, and QuEra leading neutral atom approaches. While IBM focuses on immediate use cases, neutral atoms offer scalability advantages with potential for 100,000 atoms in single chambers.",
+    "url": "https://spectrum.ieee.org/neutral-atom-quantum-computing",
+    "scores": {
+      "capability": 7,
+      "economic": 5,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 4
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Dec 26, 2025",
+    "title": "Axiom's AxiomProver Solves Open Erd\u0151s Mathematical Problems",
+    "summary": "AI startup Axiom announced their AxiomProver model solved two open Erd\u0151s problems and achieved 9 out of 12 correct answers on the challenging Putnam mathematical competition. The breakthrough was lauded by major AI researchers including Google DeepMind's Jeff Dean.",
+    "url": "https://wp.technologyreview.com/",
+    "scores": {
+      "capability": 8,
+      "economic": 3,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 3
+    },
+    "weightedScore": 5.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "IBM Quantum",
+    "date": "Nov 12, 2025",
+    "title": "IBM Unveils Quantum Nighthawk and Loon Processors for 2026 Advantage",
+    "summary": "IBM unveiled its most advanced quantum processor Nighthawk and experimental Loon processor, demonstrating all key components for fault-tolerant quantum computing. The company expects first verified quantum advantage cases by end of 2026.",
+    "url": "https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance",
+    "scores": {
+      "capability": 8,
+      "economic": 4,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 4
+    },
+    "weightedScore": 6.2,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Nasdaq",
+    "date": "Jan 4, 2026",
+    "title": "A Once-in-a-Decade Investment Opportunity: The 3 Best AI Stocks to Buy in January 2026",
+    "summary": "Investment analysis highlighting Nvidia, Meta Platforms, and Pure Storage as top AI stock picks for 2026. Focus on Nvidia's GPU dominance, Meta's AI-driven engagement improvements, and the infrastructure supporting AI workloads.",
+    "url": "https://www.nasdaq.com/articles/once-decade-investment-opportunity-3-best-ai-stocks-buy-january-2026",
+    "scores": {
+      "capability": 2,
+      "economic": 6,
+      "irreversibility": 3,
+      "timeline": 4,
+      "systemic": 3
+    },
+    "weightedScore": 3.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Finbold",
+    "date": "Jan 4, 2026",
+    "title": "AI predicts Nvidia stock price for January 31, 2026",
+    "summary": "ChatGPT analysis predicts Nvidia stock will trade in $240-260 range by end of January 2026, with bullish scenario of $280-320. Forecast based on continued AI demand strength and Nvidia's dominant market position in AI accelerators.",
+    "url": "https://finbold.com/ai-predicts-nvidia-stock-price-for-january-31-20265/",
+    "scores": {
+      "capability": 1,
+      "economic": 5,
+      "irreversibility": 2,
+      "timeline": 3,
+      "systemic": 2
+    },
+    "weightedScore": 2.8,
+    "primaryDriver": "economic"
+  }
+];
 
         let currentPage = 0;
         const itemsPerPage = 5;
@@ -378,7 +459,7 @@
             };
 
             container.innerHTML = currentNews.map((item, index) => {
-                const badge = badgeLabels[item.primaryDriver];
+                const badge = badgeLabels[item.primaryDriver] || badgeLabels.capability;
                 const globalIndex = start + index + 1;
                 const scores = item.scores;
                 const getScoreClass = (score) => score >= 7 ? 'high' : score >= 4 ? 'mid' : 'low';
