@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İş Dünyası AI Portal</title>
+    <title>Organizational AI Radar - News Ranked by Importance</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -103,7 +103,6 @@
 <body>
     <div class="bg-glow"></div>
     <div class="grid-overlay"></div>
-    
     <div class="container">
         <header>
             <div class="header-inner">
@@ -114,13 +113,12 @@
                         </svg>
                     </div>
                     <div class="logo-text">
-                        <h1>İş Dünyası <span>AI Portal</span></h1>
-                        <p>Updated: January 05, 2026 at 06:36 UTC</p>
+                        <h1>Organizational AI <span>Radar</span></h1>
+                        <p>News Ranked by Importance - Updated: January 06, 2026 at 05:49 UTC</p>
                     </div>
                 </div>
             </div>
         </header>
-
         <div class="scoring-legend">
             <div class="scoring-box">
                 <div class="scoring-title">Importance Scoring</div>
@@ -173,7 +171,6 @@
                 </div>
             </div>
         </div>
-
         <main>
             <div id="newsContainer" class="news-list"></div>
             <div id="paginationContainer" class="pagination">
@@ -188,340 +185,279 @@
                 </button>
             </div>
         </main>
-
         <footer>
             <div class="footer-inner">
-                <span>İş Dünyası AI Portal • Auto-updated daily at 7:00 AM CET</span>
+                <span>Organizational AI Radar - Auto-updated daily at 7:00 AM CET</span>
                 <span>Powered by Claude AI</span>
             </div>
         </footer>
     </div>
-
     <script>
         const newsData = [
   {
-    "source": "Bloomberg",
-    "date": "Jan 2, 2026",
-    "title": "DeepSeek Touts New Training Method as China Pushes AI Efficiency",
-    "summary": "Chinese startup DeepSeek published a breakthrough paper outlining \"Manifold-Constrained Hyper-Connections,\" a framework that improves AI scalability while reducing computational and energy demands. The method could enable training larger models with less resources, potentially reshaping the competitive landscape amid US chip restrictions.",
-    "url": "https://www.bloomberg.com/news/articles/2026-01-02/deepseek-touts-new-training-method-as-china-pushes-ai-efficiency",
-    "scores": {
-      "capability": 7,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 7,
-      "systemic": 6
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "IBM",
-    "date": "Jan 1, 2026",
-    "title": "IBM Quantum Computing Milestone: First Quantum Advantage by 2026",
-    "summary": "IBM publicly stated 2026 will mark the first time a quantum computer outperforms classical computers on practical problems. The milestone promises breakthroughs in drug development, materials science, and financial optimization, marking a transition from theoretical to practical quantum advantage.",
-    "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
+    "source": "deepseek-ai",
+    "date": "2026-01-20",
+    "title": "DeepSeek-R1 Release - Open Source Reasoning Model",
+    "summary": "DeepSeek released R1, the first open-source reasoning model matching OpenAI o1 performance while being 95% cheaper to train. Uses MIT license, 671B parameters with 37B activated per pass, achieving comparable performance across math, code, and reasoning tasks.",
+    "url": "https://api-docs.deepseek.com/news/news250120",
     "scores": {
       "capability": 9,
-      "economic": 6,
-      "irreversibility": 8,
+      "economic": 8,
+      "irreversibility": 9,
       "timeline": 8,
-      "systemic": 5
+      "systemic": 7
     },
-    "weightedScore": 7.4,
+    "weightedScore": 8.4,
     "primaryDriver": "capability"
   },
   {
-    "source": "TechCrunch",
-    "date": "Jan 2, 2026",
-    "title": "In 2026, AI will move from hype to pragmatism",
-    "summary": "Industry experts predict 2026 as the year AI transitions from flashy demos to practical deployment. Agentic workflows will move into daily practice, smaller models will be deployed strategically, and the focus shifts from scaling to making AI usable in real human workflows.",
-    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
+    "source": "IBM",
+    "date": "2026-01-01",
+    "title": "IBM Predicts Quantum Computing Advantage in 2026",
+    "summary": "IBM publicly states 2026 will mark first quantum computer outperforming classical computers. Quantum Nighthawk processor targeting 7,500 gates by year-end. Breakthrough expected in drug development and materials science.",
+    "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
     "scores": {
-      "capability": 5,
+      "capability": 9,
       "economic": 7,
+      "irreversibility": 8,
+      "timeline": 9,
+      "systemic": 8
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Yahoo Finance",
+    "date": "2026-01-06",
+    "title": "Nvidia Launches Vera Rubin AI Platform at CES",
+    "summary": "Nvidia unveils next-generation Vera Rubin superchip platform combining Vera CPU and two Rubin GPUs. Designed for agentic AI and reasoning models with 4x GPU reduction and 10x token cost reduction vs Blackwell.",
+    "url": "https://finance.yahoo.com/news/nvidia-launches-vera-rubin-its-next-major-ai-platform-at-ces-2026-230045205.html",
+    "scores": {
+      "capability": 8,
+      "economic": 8,
       "irreversibility": 7,
-      "timeline": 6,
+      "timeline": 8,
       "systemic": 6
     },
-    "weightedScore": 6.2,
+    "weightedScore": 7.7,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "The Motley Fool",
+    "date": "2026-01-03",
+    "title": "Nvidia's $65 Billion Forecast Signals Continued AI Boom",
+    "summary": "Nvidia projects $65B Q4 revenue with 65% growth. Half trillion dollars in Blackwell and Rubin visibility through 2026. AI market projected to grow 25-fold to $4.8T by 2033.",
+    "url": "https://www.fool.com/investing/2026/01/03/nvidias-65-billion-forecast-sends-a-clear-message/",
+    "scores": {
+      "capability": 7,
+      "economic": 9,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 7
+    },
+    "weightedScore": 7.6,
     "primaryDriver": "economic"
   },
   {
-    "source": "Scientific American",
-    "date": "Jan 4, 2026",
-    "title": "AI may not need massive training data after all",
-    "summary": "Johns Hopkins University research shows AI systems with brain-inspired designs can mimic human brain activity before training on any data. This challenges the dominant strategy of relying on enormous datasets and computing power, suggesting architectural design may be as important as data volume.",
-    "url": "http://www.sciencedaily.com/releases/2025/12/251228074457.htm",
+    "source": "MIT Technology Review",
+    "date": "2026-01-05",
+    "title": "Chinese Open-Source AI Models Challenge Western Dominance",
+    "summary": "Chinese firms embrace open source following DeepSeek's success. Competition drives US firms to release open models. Trump's executive order creates federal-state AI regulation conflict.",
+    "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 9
+    },
+    "weightedScore": 7.4,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Hugging Face",
+    "date": "2026-01-30",
+    "title": "Open-R1 Project Fully Replicates DeepSeek-R1",
+    "summary": "Hugging Face launches Open-R1 initiative to build missing DeepSeek-R1 components. Released training code, datasets, and distillation pipelines. Enables community to reproduce reasoning models.",
+    "url": "https://huggingface.co/blog/open-r1",
     "scores": {
       "capability": 8,
       "economic": 6,
       "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 4
+      "timeline": 7,
+      "systemic": 7
     },
-    "weightedScore": 6.8,
+    "weightedScore": 7.2,
     "primaryDriver": "capability"
   },
   {
-    "source": "CNBC",
-    "date": "Jan 2, 2026",
-    "title": "Chip stocks rally to start 2026 after third-straight winning year",
-    "summary": "Chipmaking stocks surged on AI optimism, with Micron and ASML jumping 10% and 9% respectively. The rally builds on three consecutive years of gains driven by AI infrastructure spending, though some investors express concerns about a potential AI bubble.",
-    "url": "https://www.cnbc.com/2026/01/02/chipmakers-2026-ai-trade.html",
+    "source": "TechCrunch",
+    "date": "2026-01-02",
+    "title": "AI Moves from Hype to Pragmatism in 2026",
+    "summary": "2026 marks AI's transition from demos to practical deployment. Focus shifts to smaller models, world models, and agentic workflows. Model Context Protocol emerges as standard for AI agent integration.",
+    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
     "scores": {
-      "capability": 3,
+      "capability": 7,
       "economic": 7,
-      "irreversibility": 4,
-      "timeline": 4,
-      "systemic": 6
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 8
     },
-    "weightedScore": 5.1,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "The Verge",
-    "date": "Jan 5, 2026",
-    "title": "Samsung Presents 'Your Companion to AI Living' at CES 2026",
-    "summary": "Samsung unveiled its AI-powered ecosystem vision at CES 2026, featuring Bespoke AI appliances, upgraded refrigerators with Google Gemini integration, and new TVs with HDR10+ ADVANCED. The company positions AI as foundational across mobile, display, and home appliances.",
-    "url": "https://news.samsung.com/global/samsung-presents-your-companion-to-ai-living-at-the-first-look-during-ces-2026",
-    "scores": {
-      "capability": 4,
-      "economic": 6,
-      "irreversibility": 5,
-      "timeline": 5,
-      "systemic": 4
-    },
-    "weightedScore": 5.0,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Financial Times",
-    "date": "Jan 5, 2026",
-    "title": "Strong start to 2026 on AI optimism",
-    "summary": "Markets commenced 2026 with renewed optimism as Asian markets surged, with Hong Kong's Hang Seng Index rising 2.8%. Enhanced enthusiasm surrounding DeepSeek's efficient AI training methodologies and Baidu's AI chip IPO plans fueled risk appetite across global markets.",
-    "url": "https://www.ig.com/en/news-and-trade-ideas/weekly-market-navigator--5-jan-2026-260105",
-    "scores": {
-      "capability": 2,
-      "economic": 6,
-      "irreversibility": 4,
-      "timeline": 4,
-      "systemic": 6
-    },
-    "weightedScore": 4.6,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "The Motley Fool",
-    "date": "Jan 3, 2026",
-    "title": "Did Alphabet Just Threaten Palantir's Artificial Intelligence (AI) Lead?",
-    "summary": "Pentagon awarded Alphabet a major defense contract for the GenAI.mil platform, featuring Google's Gemini AI heavily. This represents government diversification of AI investments beyond traditional players like Palantir, signaling broader adoption across defense applications.",
-    "url": "https://www.fool.com/investing/2026/01/03/did-alphabet-just-threaten-palantirs-artificial-in/",
-    "scores": {
-      "capability": 4,
-      "economic": 5,
-      "irreversibility": 5,
-      "timeline": 3,
-      "systemic": 7
-    },
-    "weightedScore": 4.8,
+    "weightedScore": 7.0,
     "primaryDriver": "systemic"
   },
   {
+    "source": "IEEE Spectrum",
+    "date": "2026-01-01",
+    "title": "Neutral Atom Quantum Computing Targets 2026 Error Correction",
+    "summary": "Microsoft, Atom Computing, and QuEra push for small error-corrected quantum machines by 2026. Neutral atoms offer scalability advantages. Path to 100,000 atoms in single vacuum chamber.",
+    "url": "https://spectrum.ieee.org/neutral-atom-quantum-computing",
+    "scores": {
+      "capability": 8,
+      "economic": 5,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 7.0,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Axios",
+    "date": "2026-01-01",
+    "title": "AI 2026 Trends: Bubbles, Agents, Demand for ROI",
+    "summary": "2026 becomes 'show me the money' year for AI with emphasis on real ROI. Companies demand concrete productivity gains from AI investments. Agent adoption accelerates but many will remain underutilized.",
+    "url": "https://www.axios.com/2026/01/01/ai-2026-money-openai-google-anthropic-agents",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "WhiteFiber",
+    "date": "2026-01-26",
+    "title": "DeepSeek R1 Sparks New Wave of Compute Demand",
+    "summary": "DeepSeek R1 release drives massive increase in H200 GPU demand despite efficiency claims. Open-source models democratize access but increase overall compute usage. Market dynamics show efficiency spurs growth.",
+    "url": "https://www.whitefiber.com/blog/deepseek-r1-explained",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.7,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "NVIDIA",
+    "date": "2026-01-06",
+    "title": "NVIDIA Introduces Alpamayo Open Reasoning Model for Autonomous Vehicles",
+    "summary": "NVIDIA announces Alpamayo, open reasoning model family for autonomous vehicle development. First deployment in Mercedes CLA with AI-defined driving coming to US in 2026.",
+    "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 7
+    },
+    "weightedScore": 6.6,
+    "primaryDriver": "capability"
+  },
+  {
     "source": "Yahoo Finance",
-    "date": "Jan 5, 2026",
-    "title": "CES 2026: What to expect from the tech industry's biggest show of the year",
-    "summary": "CES 2026 will feature major keynotes from NVIDIA's Jensen Huang and AMD's Lisa Su, with heavy focus on AI, robotics, and autonomous technology. Expect announcements around next-gen chips, AI-powered wearables, and smart glasses as the industry pushes beyond demos to commercial applications.",
-    "url": "https://finance.yahoo.com/news/ces-2026-what-to-expect-from-the-tech-industrys-biggest-show-of-the-year-140552142.html",
+    "date": "2026-01-05",
+    "title": "AI Investment Maturation - Time to Foot the Bill",
+    "summary": "AI market concentration creates single point of failure risk. Investors seek diversification beyond Magnificent Seven. Focus shifts from growth to sustainable returns and circular financing concerns.",
+    "url": "https://finance.yahoo.com/news/ai-took-investors-on-a-date-in-2025-in-2026-analysts-say-its-time-to-foot-the-bill-140012067.html",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 8
+    },
+    "weightedScore": 6.3,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Euronews",
+    "date": "2026-01-04",
+    "title": "CES 2026: Physical AI and Autonomous Systems Dominate",
+    "summary": "CES 2026 showcases physical AI manifestations including autonomous vehicles and humanoid robots. Intel and Qualcomm announce next-gen mobile processors. AI embedded in nearly everything.",
+    "url": "https://www.euronews.com/next/2026/01/04/ces-2026-expect-chip-wars-new-laptops-ai-robots-and-a-nod-to-autonomous-driving",
+    "scores": {
+      "capability": 6,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.0,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Samsung",
+    "date": "2026-01-06",
+    "title": "Samsung Unveils AI Companion Living at CES 2026",
+    "summary": "Samsung presents comprehensive AI ecosystem vision with Knox Matrix security. Introduces AI-powered devices across home appliances, TVs, and mobile with hyper-personalization focus.",
+    "url": "https://news.samsung.com/global/samsung-presents-your-companion-to-ai-living-at-the-first-look-during-ces-2026",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 5.7,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Gadget Flow",
+    "date": "2026-01-04",
+    "title": "CES 2026 AI Gadget Trends - Robots and Smart Wearables",
+    "summary": "CES 2026 features AI-powered home robots, sixth-generation Snap AR glasses, and NVIDIA pushing robotics compute. Focus on AI living integration across consumer devices.",
+    "url": "https://thegadgetflow.com/blog/ces-2026-ai-gadget-trends-to-watch-for/",
     "scores": {
       "capability": 5,
       "economic": 5,
       "irreversibility": 4,
       "timeline": 5,
-      "systemic": 4
-    },
-    "weightedScore": 4.7,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Nature",
-    "date": "Jan 4, 2026",
-    "title": "How China created AI model DeepSeek and shocked the world",
-    "summary": "Analysis of how Chinese startup DeepSeek built competitive large language models at a fraction of typical costs using government policies, generous funding, and a pipeline of AI graduates. The company's success demonstrates alternative approaches to AI development despite hardware constraints.",
-    "url": "https://www.nature.com/articles/d41586-025-00259-0",
-    "scores": {
-      "capability": 6,
-      "economic": 5,
-      "irreversibility": 5,
-      "timeline": 4,
       "systemic": 6
     },
-    "weightedScore": 5.3,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Euronews",
-    "date": "Jan 4, 2026",
-    "title": "CES 2026: Expect chip wars, new laptops, AI robots and a nod to autonomous driving",
-    "summary": "CES 2026 will showcase intense competition between Intel's Panther Lake and Qualcomm's Snapdragon Elite X2 processors. Expect reveals of Sony Honda's Afeela EV production version, LG's CLOiD household robot, and numerous AI-enhanced gadgets across consumer categories.",
-    "url": "https://www.euronews.com/next/2026/01/04/ces-2026-expect-chip-wars-new-laptops-ai-robots-and-a-nod-to-autonomous-driving",
-    "scores": {
-      "capability": 4,
-      "economic": 5,
-      "irreversibility": 4,
-      "timeline": 5,
-      "systemic": 3
-    },
-    "weightedScore": 4.4,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "NBC News",
-    "date": "Jan 2, 2026",
-    "title": "AI stocks jump amid broadly positive outlook for 2026 markets",
-    "summary": "AI-related companies led market gains as 2026 trading began, fueled by overnight news about Asian AI IPOs and DeepSeek's efficiency paper. Nvidia, Broadcom, and Taiwan Semiconductor all jumped, continuing the AI-driven market momentum from 2025.",
-    "url": "https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902",
-    "scores": {
-      "capability": 2,
-      "economic": 6,
-      "irreversibility": 3,
-      "timeline": 3,
-      "systemic": 5
-    },
-    "weightedScore": 4.1,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Gizmodo",
-    "date": "Jan 5, 2026",
-    "title": "What We're Expecting at CES 2026",
-    "summary": "CES 2026 will showcase AI integration across every gadget category, with companies cramming intelligence into laptops, appliances, and transportation. Smart home retrofitting with AI assistants like Gemini and Alexa+ continues, while smart glasses diversify beyond current offerings.",
-    "url": "https://gizmodo.com/what-were-expecting-at-ces-2026-2000704751",
-    "scores": {
-      "capability": 3,
-      "economic": 4,
-      "irreversibility": 4,
-      "timeline": 4,
-      "systemic": 3
-    },
-    "weightedScore": 3.7,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "SwitchBot",
-    "date": "Jan 4, 2026",
-    "title": "SwitchBot Demonstrates Smart Home 2.0 Powered by AI Robotics at CES 2026",
-    "summary": "SwitchBot unveiled Smart Home 2.0 ecosystem featuring the onero H1 household robot, AI MindClip portable assistant, and Lock Vision security series. The lineup represents embodied AI convergence supporting daily living, work, and recreation through unified robotics systems.",
-    "url": "https://www.prnewswire.com/news-releases/switchbot-demonstrates-smart-home-2-0-powered-by-ai-robotics-at-ces-2026--302652014.html",
-    "scores": {
-      "capability": 4,
-      "economic": 3,
-      "irreversibility": 4,
-      "timeline": 4,
-      "systemic": 2
-    },
-    "weightedScore": 3.6,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Arm Newsroom",
-    "date": "Dec 29, 2025",
-    "title": "Top 5 trends you can expect from CES 2026 in Las Vegas",
-    "summary": "Arm predicts CES 2026 will showcase AI moving to edge devices, with automakers shifting to AI-defined platforms and over 100 Windows on Arm models planned. Smart homes will become more local with on-device AI processing for privacy and reliability.",
-    "url": "https://newsroom.arm.com/blog/top-trends-for-ces-2026",
-    "scores": {
-      "capability": 4,
-      "economic": 4,
-      "irreversibility": 3,
-      "timeline": 4,
-      "systemic": 3
-    },
-    "weightedScore": 3.7,
-    "primaryDriver": "capability"
+    "weightedScore": 5.0,
+    "primaryDriver": "systemic"
   }
 ];
-
         let currentPage = 0;
         const itemsPerPage = 5;
-
         function renderNews() {
             const container = document.getElementById('newsContainer');
             const start = currentPage * itemsPerPage;
             const end = Math.min(start + itemsPerPage, newsData.length);
             const currentNews = newsData.slice(start, end);
-
             const badgeLabels = {
-                capability: { label: 'Capability', icon: '⬡', class: 'cap' },
-                economic: { label: 'Economic', icon: '◈', class: 'eco' },
-                irreversibility: { label: 'Irreversible', icon: '◆', class: 'irr' },
-                timeline: { label: 'Timeline', icon: '▲', class: 'tml' },
-                systemic: { label: 'Systemic', icon: '●', class: 'sys' }
+                capability: { label: 'Capability', icon: '', class: 'cap' },
+                economic: { label: 'Economic', icon: '', class: 'eco' },
+                irreversibility: { label: 'Irreversible', icon: '', class: 'irr' },
+                timeline: { label: 'Timeline', icon: '', class: 'tml' },
+                systemic: { label: 'Systemic', icon: '', class: 'sys' }
             };
-
             container.innerHTML = currentNews.map((item, index) => {
                 const badge = badgeLabels[item.primaryDriver] || badgeLabels.capability;
                 const globalIndex = start + index + 1;
                 const scores = item.scores;
                 const getScoreClass = (score) => score >= 7 ? 'high' : score >= 4 ? 'mid' : 'low';
-
-                return `
-                    <article class="news-card">
-                        <div class="news-inner">
-                            <div class="news-rank">
-                                <span class="news-rank-num">#${globalIndex}</span>
-                                <span class="news-rank-score">${item.weightedScore.toFixed(1)}</span>
-                            </div>
-                            <div class="news-content">
-                                <div class="news-meta">
-                                    <span class="news-badge ${badge.class}">${badge.icon} ${badge.label}</span>
-                                    <span class="news-source">${item.source}</span>
-                                    <span class="news-dot">•</span>
-                                    <span class="news-date">${item.date}</span>
-                                </div>
-                                <h2 class="news-title">${item.title}</h2>
-                                <p class="news-summary">${item.summary}</p>
-                                <div class="score-bars">
-                                    <div class="score-bar-item">
-                                        <div class="score-bar-label">CAP</div>
-                                        <div class="score-bar-track"><div class="score-bar-fill cap" style="width: ${scores.capability * 10}%"></div></div>
-                                        <div class="score-bar-value ${getScoreClass(scores.capability)}">${scores.capability}</div>
-                                    </div>
-                                    <div class="score-bar-item">
-                                        <div class="score-bar-label">ECO</div>
-                                        <div class="score-bar-track"><div class="score-bar-fill eco" style="width: ${scores.economic * 10}%"></div></div>
-                                        <div class="score-bar-value ${getScoreClass(scores.economic)}">${scores.economic}</div>
-                                    </div>
-                                    <div class="score-bar-item">
-                                        <div class="score-bar-label">IRR</div>
-                                        <div class="score-bar-track"><div class="score-bar-fill irr" style="width: ${scores.irreversibility * 10}%"></div></div>
-                                        <div class="score-bar-value ${getScoreClass(scores.irreversibility)}">${scores.irreversibility}</div>
-                                    </div>
-                                    <div class="score-bar-item">
-                                        <div class="score-bar-label">TML</div>
-                                        <div class="score-bar-track"><div class="score-bar-fill tml" style="width: ${scores.timeline * 10}%"></div></div>
-                                        <div class="score-bar-value ${getScoreClass(scores.timeline)}">${scores.timeline}</div>
-                                    </div>
-                                    <div class="score-bar-item">
-                                        <div class="score-bar-label">SYS</div>
-                                        <div class="score-bar-track"><div class="score-bar-fill sys" style="width: ${scores.systemic * 10}%"></div></div>
-                                        <div class="score-bar-value ${getScoreClass(scores.systemic)}">${scores.systemic}</div>
-                                    </div>
-                                </div>
-                                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="news-link">
-                                    Read full article
-                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                `;
+                return '<article class="news-card"><div class="news-inner"><div class="news-rank"><span class="news-rank-num">#' + globalIndex + '</span><span class="news-rank-score">' + item.weightedScore.toFixed(1) + '</span></div><div class="news-content"><div class="news-meta"><span class="news-badge ' + badge.class + '">' + badge.label + '</span><span class="news-source">' + item.source + '</span><span class="news-dot">•</span><span class="news-date">' + item.date + '</span></div><h2 class="news-title">' + item.title + '</h2><p class="news-summary">' + item.summary + '</p><div class="score-bars"><div class="score-bar-item"><div class="score-bar-label">CAP</div><div class="score-bar-track"><div class="score-bar-fill cap" style="width: ' + (scores.capability * 10) + '%"></div></div><div class="score-bar-value ' + getScoreClass(scores.capability) + '">' + scores.capability + '</div></div><div class="score-bar-item"><div class="score-bar-label">ECO</div><div class="score-bar-track"><div class="score-bar-fill eco" style="width: ' + (scores.economic * 10) + '%"></div></div><div class="score-bar-value ' + getScoreClass(scores.economic) + '">' + scores.economic + '</div></div><div class="score-bar-item"><div class="score-bar-label">IRR</div><div class="score-bar-track"><div class="score-bar-fill irr" style="width: ' + (scores.irreversibility * 10) + '%"></div></div><div class="score-bar-value ' + getScoreClass(scores.irreversibility) + '">' + scores.irreversibility + '</div></div><div class="score-bar-item"><div class="score-bar-label">TML</div><div class="score-bar-track"><div class="score-bar-fill tml" style="width: ' + (scores.timeline * 10) + '%"></div></div><div class="score-bar-value ' + getScoreClass(scores.timeline) + '">' + scores.timeline + '</div></div><div class="score-bar-item"><div class="score-bar-label">SYS</div><div class="score-bar-track"><div class="score-bar-fill sys" style="width: ' + (scores.systemic * 10) + '%"></div></div><div class="score-bar-value ' + getScoreClass(scores.systemic) + '">' + scores.systemic + '</div></div></div><a href="' + item.url + '" target="_blank" rel="noopener noreferrer" class="news-link">Read full article</a></div></div></article>';
             }).join('');
-
             updatePagination();
         }
-
         function updatePagination() {
             const start = currentPage * itemsPerPage + 1;
             const end = Math.min((currentPage + 1) * itemsPerPage, newsData.length);
@@ -530,15 +466,8 @@
             document.getElementById('prevBtn').disabled = currentPage === 0;
             document.getElementById('nextBtn').disabled = end >= newsData.length;
         }
-
-        function prevPage() {
-            if (currentPage > 0) { currentPage--; renderNews(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        }
-
-        function nextPage() {
-            if ((currentPage + 1) * itemsPerPage < newsData.length) { currentPage++; renderNews(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        }
-
+        function prevPage() { if (currentPage > 0) { currentPage--; renderNews(); window.scrollTo({ top: 0, behavior: 'smooth' }); } }
+        function nextPage() { if ((currentPage + 1) * itemsPerPage < newsData.length) { currentPage++; renderNews(); window.scrollTo({ top: 0, behavior: 'smooth' }); } }
         renderNews();
     </script>
 </body>
