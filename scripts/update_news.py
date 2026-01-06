@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
 AI News Portal - Daily Update Script
+Fetches AI news from the LAST 24 HOURS only
 """
 
 import anthropic
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 
 HTML_TEMPLATE = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizational AI Radar - News Ranked by Importance</title>
+    <title>Is Dunyasi AI Radar</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -124,7 +125,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: %%UPDATE_DATE%%</p>
+                        <p>Last 24 Hours - Updated: %%UPDATE_DATE%%</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +246,18 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
 
 def fetch_news_from_claude():
     client = anthropic.Anthropic()
-    prompt = """Search for the latest AI news from the past 2-3 days from respected sources.
+    
+    # Calculate today's date for the prompt
+    today = datetime.utcnow()
+    yesterday = today - timedelta(days=1)
+    date_str = today.strftime("%B %d, %Y")
+    yesterday_str = yesterday.strftime("%B %d, %Y")
+    
+    prompt = f"""Today is {date_str}. Search for AI and artificial intelligence news published ONLY in the LAST 24 HOURS (since {yesterday_str}).
+
+IMPORTANT: Only include news articles published TODAY or YESTERDAY. Do NOT include older news.
+
+Focus on respected sources: TechCrunch, Reuters, Wired, Ars Technica, The Verge, MIT Technology Review, Nature, Bloomberg, CNBC, Financial Times, Engadget, Tom's Guide, Yahoo Finance.
 
 Score each news item 0-10 on these criteria:
 1. CAPABILITY (30%): Does this change what AI can do?
@@ -254,13 +266,19 @@ Score each news item 0-10 on these criteria:
 4. TIMELINE (15%): Does this speed up or slow down AI progress?
 5. SYSTEMIC (10%): Does this trigger effects beyond AI?
 
-Return ONLY a JSON array with 15 news items. Each item must have:
-- source, date, title, summary, url
-- scores: {"capability": 0-10, "economic": 0-10, "irreversibility": 0-10, "timeline": 0-10, "systemic": 0-10}
+Return ONLY a JSON array with up to 15 news items from the last 24 hours. Each item must have:
+- source: publication name
+- date: publication date (e.g., "{date_str}" or "Today" or "X hours ago")
+- title: article headline
+- summary: 2-3 sentence summary
+- url: full article URL
+- scores: {{"capability": 0-10, "economic": 0-10, "irreversibility": 0-10, "timeline": 0-10, "systemic": 0-10}}
 - weightedScore: (capability*0.30)+(economic*0.25)+(irreversibility*0.20)+(timeline*0.15)+(systemic*0.10)
-- primaryDriver: whichever scored highest
+- primaryDriver: whichever criterion scored highest ("capability" | "economic" | "irreversibility" | "timeline" | "systemic")
 
-Return ONLY valid JSON array, no markdown."""
+If fewer than 15 articles were published in the last 24 hours, return only what exists. Do not pad with older news.
+
+Return ONLY valid JSON array, no markdown, no explanation."""
 
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
@@ -282,14 +300,14 @@ Return ONLY valid JSON array, no markdown."""
 
 
 def generate_html(news_data):
-    update_date = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
+    update_date = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
     html = HTML_TEMPLATE.replace('%%NEWS_DATA%%', json.dumps(news_data, indent=2))
     html = html.replace('%%UPDATE_DATE%%', update_date)
     return html
 
 
 def main():
-    print("Fetching latest AI news...")
+    print("Fetching AI news from the last 24 hours...")
     news_data = fetch_news_from_claude()
     print(f"Fetched {len(news_data)} news items")
     
@@ -307,4 +325,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
