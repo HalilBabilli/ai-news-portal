@@ -14,7 +14,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is Dunyasi AI Radar</title>
+    <title>İş Dünyası AI Radar - News Ranked by Importance</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -124,7 +124,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
                         </svg>
                     </div>
                     <div class="logo-text">
-                        <h1>Organizational AI <span>Radar</span></h1>
+                        <h1>İş Dünyası AI <span>Radar</span></h1>
                         <p>Last 24 Hours - Updated: %%UPDATE_DATE%%</p>
                     </div>
                 </div>
@@ -198,7 +198,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
         </main>
         <footer>
             <div class="footer-inner">
-                <span>Organizational AI Radar - Auto-updated daily at 7:00 AM CET</span>
+                <span>İş Dünyası AI Radar - Auto-updated daily at 7:00 AM CET</span>
                 <span>Powered by Claude AI</span>
             </div>
         </footer>
@@ -325,3 +325,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
