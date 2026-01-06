@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is Dunyasi AI Radar</title>
+    <title>İş Dünyası AI Radar - News Ranked by Importance</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -113,8 +113,8 @@
                         </svg>
                     </div>
                     <div class="logo-text">
-                        <h1>Organizational AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: January 06, 2026 at 06:01 UTC</p>
+                        <h1>İş Dünyası AI <span>Radar</span></h1>
+                        <p>Last 24 Hours - Updated: January 06, 2026 at 06:08 UTC</p>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
         </main>
         <footer>
             <div class="footer-inner">
-                <span>Organizational AI Radar - Auto-updated daily at 7:00 AM CET</span>
+                <span>İş Dünyası AI Radar - Auto-updated daily at 7:00 AM CET</span>
                 <span>Powered by Claude AI</span>
             </div>
         </footer>
@@ -195,195 +195,163 @@
     <script>
         const newsData = [
   {
-    "source": "NVIDIA",
-    "date": "January 06, 2026",
-    "title": "NVIDIA Announces Rubin Platform, DLSS 4.5, and Alpamayo Open AI Models at CES 2026",
-    "summary": "NVIDIA revealed its next-generation Rubin platform with six-chip AI architecture now in production, offering 10x cost reduction for token generation. Also announced DLSS 4.5 with dynamic 6x frame generation and Alpamayo open reasoning models for autonomous vehicles.",
+    "source": "NVIDIA Blog",
+    "date": "30 minutes ago",
+    "title": "NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA Presents Blueprint for the Future at CES",
+    "summary": "Jensen Huang unveiled the Rubin AI platform in full production at CES 2026, delivering AI tokens at one-tenth the cost. The company announced open models spanning six domains including healthcare (Clara), robotics (Cosmos), and autonomous driving (Alpamayo). Huang demonstrated a personalized AI agent running locally through a Reachy Mini robot using Hugging Face models.",
     "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
     "scores": {
       "capability": 9,
       "economic": 8,
       "irreversibility": 8,
+      "timeline": 8,
+      "systemic": 7
+    },
+    "weightedScore": 8.25,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Axios",
+    "date": "6 hours ago",
+    "title": "Nvidia CES 2026: Jensen Huang says 'ChatGPT moment for physical AI' is coming",
+    "summary": "Jensen Huang announced the launch of the Rubin platform with six chips and AI models for autonomous vehicles at CES 2026. He predicted every car and truck will eventually be autonomous, calling it the 'ChatGPT moment for physical AI'. The products will be available for Nvidia partners in the second half of 2026, with robotaxi testing planned for 2027.",
+    "url": "https://www.axios.com/2026/01/05/nvidia-ces-2026-jensen-huang-speech-ai",
+    "scores": {
+      "capability": 8,
+      "economic": 8,
+      "irreversibility": 8,
       "timeline": 7,
-      "systemic": 6
+      "systemic": 9
+    },
+    "weightedScore": 8.0,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "19 hours ago",
+    "title": "AI may not need massive training data after all",
+    "summary": "Johns Hopkins University research shows that AI systems built with brain-inspired designs can mimic human brain activity before seeing any training data. The discovery challenges the data-hungry approach to AI development and suggests smarter design could dramatically speed up learning while reducing costs and energy use. The findings were published in Nature Machine Intelligence.",
+    "url": "https://www.sciencedaily.com/releases/2025/12/251228074457.htm",
+    "scores": {
+      "capability": 9,
+      "economic": 7,
+      "irreversibility": 8,
+      "timeline": 8,
+      "systemic": 7
     },
     "weightedScore": 8.0,
     "primaryDriver": "capability"
   },
   {
-    "source": "Intel",
-    "date": "January 06, 2026",
-    "title": "Intel Launches Core Ultra Series 3 'Panther Lake' CPUs Built on 18A Process",
-    "summary": "Intel officially launched Core Ultra Series 3 processors, the first AI PC platform built on Intel's 18A process technology designed and manufactured in the US. Features up to 180 TOPS AI performance and 77% better gaming performance than previous generation.",
-    "url": "https://newsroom.intel.com/client-computing/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a",
+    "source": "Hyundai Motor Group",
+    "date": "6 hours ago",
+    "title": "Hyundai Motor Group Announces AI Robotics Strategy to Lead Human-Centered Robotics Era at CES 2026",
+    "summary": "Hyundai unveiled its transformative AI Robotics Strategy with Boston Dynamics, presenting a roadmap for human-robot collaboration under 'Partnering Human Progress'. The company showcased the Atlas humanoid robot for industrial applications and announced a $125.2 trillion investment in AI-powered robotics over five years. A new Robot Manufacturing and AI Center (RMAC) will open in the U.S. in 2026.",
+    "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001100",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 7.95,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Benzinga",
+    "date": "3 hours ago",
+    "title": "Nvidia CEO Jensen Huang Says Blackwell Successor Vera Rubin Is In 'Full Production' At CES 2026",
+    "summary": "Nvidia's Vera Rubin platform delivers up to five times the performance of Blackwell while improving efficiency and memory bandwidth. The system uses hot-water cooling at 45\u00b0C and full-stack encryption for enhanced security. Huang said the platform addresses AI's next major constraint: context and data movement, with integration of advanced GPUs, custom CPUs, and high-speed networking.",
+    "url": "https://www.benzinga.com/markets/tech/26/01/49713613/nvidia-ceo-jensen-huang-says-blackwell-successor-vera-rubin-is-in-full-production-at-ces-2026-here-i",
+    "scores": {
+      "capability": 8,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 7.55,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "1 hour ago",
+    "title": "CES 2026: Follow live as Nvidia, Lego, AMD, Amazon, and more make their big reveals",
+    "summary": "Nvidia released a new stack of robot foundation models, simulation tools, and edge hardware at CES 2026, signaling ambitions to become the default platform for generalist robotics. AMD's keynote featured Dr. Fei-Fei Li demonstrating World Labs' Marble product, which uses generative 3D world models to create spatial intelligence. The event emphasized AI's convergence with the physical world.",
+    "url": "https://techcrunch.com/storyline/ces-2026-follow-live-as-nvidia-lego-amd-amazon-and-more-make-their-big-reveals/",
     "scores": {
       "capability": 8,
       "economic": 7,
       "irreversibility": 7,
       "timeline": 8,
-      "systemic": 5
+      "systemic": 6
     },
-    "weightedScore": 7.3,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "ScienceDaily",
-    "date": "January 04, 2026",
-    "title": "Johns Hopkins Study Shows AI May Not Need Massive Training Data",
-    "summary": "New research from Johns Hopkins University reveals AI systems built with brain-inspired designs can mimic human brain activity before training. Challenges the data-hungry approach to AI development and suggests smarter design could dramatically speed up learning while slashing costs.",
-    "url": "https://www.sciencedaily.com/releases/2025/12/251228074457.htm",
-    "scores": {
-      "capability": 8,
-      "economic": 6,
-      "irreversibility": 7,
-      "timeline": 7,
-      "systemic": 5
-    },
-    "weightedScore": 6.8,
+    "weightedScore": 7.45,
     "primaryDriver": "capability"
   },
   {
     "source": "MIT Technology Review",
-    "date": "January 05, 2026",
-    "title": "What's Next for AI in 2026: Chinese Open Models and Regulatory Battles",
-    "summary": "Analysis of 2026 AI trends including Chinese open-source models gaining ground, regulatory conflicts between federal and state governments, and AI shopping assistants becoming mainstream. DeepSeek's R1 model highlighted as benchmark for open AI development.",
+    "date": "15 hours ago",
+    "title": "What's next for AI in 2026",
+    "summary": "Chinese open-source models continue to gain prominence, with DeepSeek R1 having shocked the world last year. Silicon Valley apps increasingly ship on Chinese open models, with the lag between Chinese releases and Western frontier models shrinking from months to weeks. President Trump's executive order aims to neuter state AI laws, setting up political warfare over AI regulation in 2026.",
     "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
     "scores": {
       "capability": 6,
       "economic": 7,
-      "irreversibility": 6,
-      "timeline": 6,
+      "irreversibility": 8,
+      "timeline": 7,
       "systemic": 8
     },
-    "weightedScore": 6.6,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Hyundai",
-    "date": "January 06, 2026",
-    "title": "Hyundai Motor Group Unveils AI Robotics Strategy with Boston Dynamics Partnership",
-    "summary": "Hyundai announced transformative AI Robotics Strategy at CES 2026, featuring Atlas humanoid robot for industrial applications. Strategy combines Hyundai's manufacturing expertise with Boston Dynamics' R&D leadership for human-robot collaboration.",
-    "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001100",
-    "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 7
-    },
-    "weightedScore": 6.5,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "January 02, 2026",
-    "title": "In 2026, AI Will Move From Hype to Pragmatism",
-    "summary": "Industry analysis suggests 2026 will be a transition year from brute-force scaling to new architectures, from flashy demos to targeted deployments. Focus shifting to smaller models, physical AI devices, and agentic workflows moving into practice.",
-    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
-    "scores": {
-      "capability": 5,
-      "economic": 6,
-      "irreversibility": 5,
-      "timeline": 7,
-      "systemic": 7
-    },
-    "weightedScore": 6.0,
-    "primaryDriver": "timeline"
-  },
-  {
-    "source": "Samsung",
-    "date": "January 06, 2026",
-    "title": "Samsung Presents 'Your Companion to AI Living' at CES 2026",
-    "summary": "Samsung unveiled AI-powered devices including Micro RGB 130-inch TV with Vision AI, AI Beauty Mirror, and integrated AI across home entertainment and appliances. Features hands-free interaction and personalized health coaching through connected devices.",
-    "url": "https://news.samsung.com/us/samsung-presents-your-companion-to-ai-living-first-look-ces-2026/",
-    "scores": {
-      "capability": 6,
-      "economic": 7,
-      "irreversibility": 4,
-      "timeline": 5,
-      "systemic": 6
-    },
-    "weightedScore": 5.9,
-    "primaryDriver": "economic"
+    "weightedScore": 7.1,
+    "primaryDriver": "irreversibility"
   },
   {
     "source": "Tom's Guide",
-    "date": "January 06, 2026",
-    "title": "CES 2026: Intel Unveils Core Ultra Series 3 with Local AI Computing",
-    "summary": "Intel showcased local AI computing capabilities with Perplexity CEO discussing benefits of localized compute for reduced latency and costs. Intel Core Ultra X9 shows 1.7x better performance than Nvidia Jetson Orin in image classification tasks.",
+    "date": "5 hours ago",
+    "title": "CES 2026 LIVE: All the biggest tech news from Day 1",
+    "summary": "Intel announced Core Ultra Series 3 products available January 6, featuring 180 TOPS and up to 96GB DDR5x for local AI processing. The company demonstrated partnerships with Microsoft for Copilot+ PC features and showcased AI-optimized gaming performance with titles like Battlefield 6. Perplexity CEO discussed the shift toward localized AI compute for better security and cost-effectiveness.",
     "url": "https://www.tomsguide.com/news/live/ces-2026-live-latest-news",
     "scores": {
       "capability": 7,
-      "economic": 5,
-      "irreversibility": 5,
-      "timeline": 6,
-      "systemic": 4
+      "economic": 6,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 5
     },
-    "weightedScore": 5.7,
+    "weightedScore": 6.55,
     "primaryDriver": "capability"
   },
   {
-    "source": "NBC News",
-    "date": "January 03, 2026",
-    "title": "AI Stocks Jump Amid Broadly Positive Outlook for 2026 Markets",
-    "summary": "AI stocks rose on Friday with analysts expecting AI boom to remain major market theme in 2026. Global growth and falling interest rates anticipated to boost US stocks, though skepticism remains about AI sustainability.",
-    "url": "https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902",
+    "source": "Artificial Intelligence News Today",
+    "date": "15 hours ago",
+    "title": "AI News Today (January 5, 2026): Top AI News and Breakthroughs",
+    "summary": "CrowdStrike, AWS, and NVIDIA selected 35 startups for their AI-driven cybersecurity accelerator running until March 2026. Reports warn of AI-driven inflation as data center demand strains energy grids and supply chains. India's upcoming AI Impact Summit 2026 positions the country as a hub for 'frugal AI' focused on affordable, energy-efficient models for healthcare, agriculture, and education.",
+    "url": "https://artificialintelligence-newstoday.com/ai-news-today-january-5-2026-top-ai-news-and-breakthroughs/",
     "scores": {
-      "capability": 3,
+      "capability": 5,
       "economic": 8,
-      "irreversibility": 3,
-      "timeline": 4,
-      "systemic": 6
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
     },
-    "weightedScore": 5.0,
+    "weightedScore": 6.4,
     "primaryDriver": "economic"
   },
   {
-    "source": "Engadget",
-    "date": "January 06, 2026",
-    "title": "CES 2026 Live: Major Tech Announcements from Intel, NVIDIA, and Samsung",
-    "summary": "Live coverage of CES 2026 featuring Intel's Panther Lake launch, NVIDIA's AI announcements, and Samsung's First Look presentation. Intel confirmed handheld gaming platform with Panther Lake and Battlefield 6 optimization.",
-    "url": "https://www.engadget.com/ces-2026-live-updates-from-techs-biggest-conference-in-las-vegas-153146838.html",
-    "scores": {
-      "capability": 5,
-      "economic": 5,
-      "irreversibility": 3,
-      "timeline": 6,
-      "systemic": 4
-    },
-    "weightedScore": 4.8,
-    "primaryDriver": "timeline"
-  },
-  {
-    "source": "Tom's Hardware",
-    "date": "January 06, 2026",
-    "title": "NVIDIA Introduces DLSS 4.5 and 6X Multi Frame Generation at CES 2026",
-    "summary": "NVIDIA announced DLSS 4.5 with second-generation transformer model and dynamic 6x frame generation. New features promise 240fps 4K gaming with path tracing and improved image quality with reduced ghosting.",
-    "url": "https://www.tomshardware.com/pc-components/cpus/nvidia-introduces-dlss-4-5-and-multi-frame-generation-6x-at-ces-2026-updated-models-can-generate-higher-quality-upscaled-frames-and-more-of-them-dynamically",
+    "source": "Samsung News",
+    "date": "3 hours ago",
+    "title": "Samsung's The First Look 2026: A Vision of AI Companions for Everyday Life",
+    "summary": "Samsung unveiled its 'Your Companion to AI Living' theme at CES 2026, showcasing the 130-inch Micro RGB TV with Vision AI features. The company introduced AI-powered entertainment systems, beauty mirrors, and connected home appliances. The Vision AI Companion (VAC) engine powers Samsung's 2026 TV lineup with hands-free interaction capabilities.",
+    "url": "https://news.samsung.com/global/ces-2026-inside-samsungs-the-first-look-2026-a-vision-of-ai-companions-for-everyday-life",
     "scores": {
       "capability": 6,
-      "economic": 4,
-      "irreversibility": 4,
-      "timeline": 5,
-      "systemic": 3
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 6
     },
-    "weightedScore": 4.6,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Euronews",
-    "date": "January 04, 2026",
-    "title": "CES 2026 Preview: AI Embedded in Nearly Everything",
-    "summary": "Preview of CES 2026 highlighting AI integration across all product categories, chip wars between Intel, AMD, and Qualcomm, and new laptop announcements. LG's CLOiD helper robot and Sony Honda Mobility's Afeela EV among expected reveals.",
-    "url": "https://www.euronews.com/next/2026/01/04/ces-2026-expect-chip-wars-new-laptops-ai-robots-and-a-nod-to-autonomous-driving",
-    "scores": {
-      "capability": 4,
-      "economic": 5,
-      "irreversibility": 3,
-      "timeline": 5,
-      "systemic": 5
-    },
-    "weightedScore": 4.4,
+    "weightedScore": 6.15,
     "primaryDriver": "economic"
   }
 ];
