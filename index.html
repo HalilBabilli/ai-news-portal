@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: January 07, 2026 at 06:30 UTC</p>
+                        <p>Last 24 Hours - Updated: January 08, 2026 at 06:31 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,88 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Gizmodo",
+    "date": "January 7, 2026",
+    "title": "Will 2026 Be the Year That the AI Industry Stops Crowing About 'AGI'?",
+    "summary": "AI companies are backing away from AGI promises after years of massive investment. Industry leaders like Sam Altman say AGI is 'not a super useful term' as they pivot away from the original goal. Critics argue this shift reflects the reality that large language models cannot achieve true general intelligence.",
+    "url": "https://gizmodo.com/will-2026-be-the-year-that-the-ai-industry-stops-crowing-about-agi-2000707012",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 9,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 7.55,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "CNBC",
+    "date": "January 6, 2026",
+    "title": "Elon Musk's xAI raises $20 billion from investors including Nvidia, Cisco, Fidelity",
+    "summary": "Elon Musk's xAI raised $20 billion, exceeding its $15 billion target, at a $230 billion valuation. Investors included Nvidia, Cisco, Fidelity, and sovereign wealth funds. Both Nvidia and Cisco serve as vendors and strategic partners to xAI.",
+    "url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 7.15,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "January 6, 2026",
+    "title": "CES 2026: Everything revealed, from Nvidia's debuts to AMD's new chips to Razer's AI oddities",
+    "summary": "Nvidia unveiled its Rubin computing architecture to replace Blackwell in H2 2026, along with Alpamayo AI models for autonomous vehicles. AMD announced new AI PC processors. Amazon launched Alexa+ with browser and app access.",
+    "url": "https://techcrunch.com/2026/01/06/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 5
+    },
+    "weightedScore": 7.05,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Tech Startups",
+    "date": "January 7, 2026",
+    "title": "Top Tech News Today, January 7, 2026",
+    "summary": "Mobileye acquiring Mentee Robotics for $900M to expand beyond autonomous driving into humanoid robotics. Commonwealth Fusion Systems partnered with Nvidia for AI-era power solutions. AI chip export controls debate continues affecting supply chains.",
+    "url": "https://techstartups.com/2026/01/07/top-tech-news-today-january-7-2026/",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.95,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "January 8, 2026",
+    "title": "CES 2026: Follow live with news from Caterpillar and Nvidia, plus robotaxis, robots, and surprises from the show floor",
+    "summary": "Ford announced an AI assistant debuting in smartphone app before expanding to vehicles in 2027. Donut Lab unveiled first solid-state battery for vehicle production with 5-minute charging and 600km range. Viaim debuted AI earbuds for conference rooms.",
+    "url": "https://techcrunch.com/storyline/ces-2026-follow-live-for-the-first-official-day-with-ring-mobileye-siemens-robots-ai-and-more/",
+    "scores": {
+      "capability": 6,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 4
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "timeline"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
