@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: January 18, 2026 at 06:27 UTC</p>
+                        <p>Last 24 Hours - Updated: January 19, 2026 at 06:35 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,24 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg",
+    "date": "January 19, 2026",
+    "title": "Jeremy Grantham Says AI Is Indeed a Classic Market Bubble (Podcast)",
+    "summary": "GMO co-founder Jeremy Grantham discusses his new book and explains why he believes artificial intelligence is a classic market bubble waiting to pop. He argues that most investing premiums boil down to value and AI's promise doesn't spare it from a painful shakeout.",
+    "url": "https://www.bloomberg.com/news/articles/2026-01-19/jeremy-grantham-says-ai-is-indeed-a-classic-market-bubble-podcast",
+    "scores": {
+      "capability": 2,
+      "economic": 8,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 5.4,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
