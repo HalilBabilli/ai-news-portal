@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: January 31, 2026 at 06:35 UTC</p>
+                        <p>Last 24 Hours - Updated: February 01, 2026 at 06:44 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,24 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg/Izvestia",
+    "date": "February 01, 2026",
+    "title": "SpaceX Requests Permission to Launch 1 Million Satellites for AI Data Centers",
+    "summary": "Elon Musk's SpaceX has requested permission from the US Federal Commission to launch up to 1 million satellites into low-Earth orbit for AI training data centers in space. The company cites explosive growth in AI data demand and claims space-based systems will be cheaper than Earth-based alternatives.",
+    "url": "https://en.iz.ru/en/2035056/2026-02-01/bloomberg-reported-spacexs-plans-launch-1-million-satellites-ai-data-centers",
+    "scores": {
+      "capability": 9,
+      "economic": 8,
+      "irreversibility": 9,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 8.2,
+    "primaryDriver": "capability"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
