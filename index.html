@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 02, 2026 at 07:00 UTC</p>
+                        <p>Last 24 Hours - Updated: February 03, 2026 at 06:47 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,104 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg",
+    "date": "February 02, 2026",
+    "title": "SpaceX Acquires xAI as Musk Prepares for Mega IPO",
+    "summary": "Elon Musk is combining SpaceX and xAI in a deal that values the enlarged entity at $1.25 trillion. The merger aims to create space-based AI data centers and represents the largest combination in Musk's business portfolio to date.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-02/elon-musk-s-spacex-said-to-combine-with-xai-ahead-of-mega-ipo",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
+      "irreversibility": 9,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 8.3,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "February 02, 2026",
+    "title": "Elon Musk's SpaceX officially acquires Elon Musk's xAI, with plan to build data centers in space",
+    "summary": "SpaceX has acquired xAI to create space-based data centers, addressing the massive power demands of AI. The merger values the combined company at $1.25 trillion ahead of a planned IPO, with xAI burning $1 billion per month.",
+    "url": "https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger",
+    "scores": {
+      "capability": 9,
+      "economic": 9,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 8.05,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
+    "date": "February 02, 2026",
+    "title": "Elon Musk's SpaceX acquiring AI startup xAI ahead of potential IPO",
+    "summary": "The transaction marks the largest tie-up in Musk's business portfolio, bringing together SpaceX (valued at $800B) and xAI (valued at $230B). Tesla also invested $2 billion in xAI, while xAI faces regulatory probes over inappropriate content generation.",
+    "url": "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html",
+    "scores": {
+      "capability": 7,
+      "economic": 9,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 7.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "February 01, 2026",
+    "title": "AI layoffs or 'AI-washing'?",
+    "summary": "Analysis of whether companies citing AI for layoffs are truly adapting to AI efficiencies or using AI as an excuse for cuts due to other factors. AI was stated as the reason for over 50,000 layoffs in 2025, but many companies lack mature AI applications to replace those roles.",
+    "url": "https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing",
+    "scores": {
+      "capability": 4,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.65,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Conversation",
+    "date": "February 03, 2026",
+    "title": "An AI agent you can run at home has gone viral \u2013 and things are getting a bit weird",
+    "summary": "Discussion of a home-run AI agent that has gained viral attention, exploring how people intuitively understand meaningful tasks should require more effort than simple prompts or button pushes.",
+    "url": "https://theconversation.com/topics/artificial-intelligence-ai-90",
+    "scores": {
+      "capability": 6,
+      "economic": 4,
+      "irreversibility": 3,
+      "timeline": 4,
+      "systemic": 5
+    },
+    "weightedScore": 4.7,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CoinDesk",
+    "date": "February 03, 2026",
+    "title": "What happens to SpaceX's $650 million bitcoin after mega deal with Elon Musk's xAI",
+    "summary": "Analysis of how the SpaceX-xAI merger affects SpaceX's bitcoin holdings worth $650 million. The combined company inherits the crypto position ahead of potential IPO, raising questions about asset management across Musk's empire.",
+    "url": "https://www.coindesk.com/markets/2026/02/03/musk-s-spacex-xai-mega-deal-sharpens-focus-on-bitcoin-accounting-ahead-of-ipo",
+    "scores": {
+      "capability": 3,
+      "economic": 6,
+      "irreversibility": 4,
+      "timeline": 3,
+      "systemic": 5
+    },
+    "weightedScore": 4.45,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
