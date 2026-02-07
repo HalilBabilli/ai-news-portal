@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 06, 2026 at 06:51 UTC</p>
+                        <p>Last 24 Hours - Updated: February 07, 2026 at 06:38 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg",
+    "date": "13 hours ago",
+    "title": "How Much Is Big Tech Spending on AI Computing? A Staggering $650 Billion in 2026",
+    "summary": "Four major US tech companies have forecast capital expenditures reaching about $650 billion in 2026. This massive spending is earmarked for new data centers and AI computing infrastructure.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-06/how-much-is-big-tech-spending-on-ai-computing-a-staggering-650-billion-in-2026",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 7.35,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "ABC News",
+    "date": "15 hours ago",
+    "title": "Why a new AI tool hammered some software stocks this week",
+    "summary": "Software company shares plummeted after Anthropic unveiled Claude Cowork, an AI-fueled workplace assistant. The tool's new plugins for legal, finance, and data marketing sectors sparked investor fears of enterprise software replacement.",
+    "url": "https://abcnews.go.com/Business/new-ai-tool-hammered-software-stocks-week/story?id=129845251",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 7
+    },
+    "weightedScore": 7.25,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "13 hours ago",
+    "title": "Scientists warn that rapid advances in AI and neurotechnology are outpacing consciousness understanding",
+    "summary": "Researchers argue that developing scientific tests for AI consciousness is crucial as advances in AI and neurotechnology create serious ethical risks. The pace of AI development is outstripping our understanding of consciousness itself.",
+    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+    "scores": {
+      "capability": 5,
+      "economic": 4,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 9
+    },
+    "weightedScore": 6.5,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
