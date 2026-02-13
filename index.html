@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 12, 2026 at 06:59 UTC</p>
+                        <p>Last 24 Hours - Updated: February 13, 2026 at 06:57 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,184 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "TradingView/Reuters",
+    "date": "Today (9 hours ago)",
+    "title": "OpenAI accuses DeepSeek of distilling US models to gain advantage",
+    "summary": "OpenAI has warned U.S. lawmakers that Chinese AI startup DeepSeek is using sophisticated methods to extract results from leading U.S. AI models. This represents a significant escalation in AI competition between the US and China.",
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N3Z81GW:0-openai-accuses-deepseek-of-distilling-us-models-to-gain-advantage-bloomberg-news-reports/",
+    "scores": {
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 9
+    },
+    "weightedScore": 7.25,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "STLPress.News",
+    "date": "Yesterday (14 hours ago)",
+    "title": "Powerful Artificial Intelligence Market Impact 2026",
+    "summary": "The AI market is expected to reach over $500 billion by 2026, driven by demand for intelligent analytics and enhanced customer experiences. AI will significantly impact healthcare, finance, and manufacturing sectors while creating new AI management and ethics roles.",
+    "url": "https://stlpress.news/powerful-artificial-intelligence-market-impact-2026/",
+    "scores": {
+      "capability": 5,
+      "economic": 9,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.65,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "Yesterday",
+    "title": "Zhipu leads rally in Chinese AI stocks, surging 30% as a wave of new releases hits market",
+    "summary": "Hong Kong-listed Zhipu AI surged nearly 30% after releasing its GLM-5 open-source model with enhanced coding capabilities. The company claims the model approaches Anthropic's Claude Opus 4.5 in coding benchmarks while surpassing Google's Gemini 3 Pro on some tests.",
+    "url": "https://www.cnbc.com/2026/02/12/chinese-ai-stocks-new-model-and-agent-releases-zhipu-minimax.html",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 4
+    },
+    "weightedScore": 5.95,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MIT News",
+    "date": "Yesterday",
+    "title": "Accelerating science with AI and simulations",
+    "summary": "MIT's Rafael G\u00f3mez-Bombarelli discusses how AI for simulations has evolved from experimental to consensus scientific view. The US Department of Energy launched the Genesis Mission to accelerate scientific discovery using AI, marking an inflection point for the field.",
+    "url": "https://news.mit.edu/2026/accelerating-science-ai-and-simulations-rafael-gomez-bombarelli-0212",
+    "scores": {
+      "capability": 6,
+      "economic": 5,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 5
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "timeline"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "Today (5 hours ago)",
+    "title": "AI Angst in US Stocks Sends Global Money Chasing Asia's Winners",
+    "summary": "Wall Street's AI disruption fears are benefiting Asian stocks, fueling demand for chipmakers in the region's supply chain. The MSCI Asia Pacific Index has risen over 12% in 2026, contrasting with US market losses amid AI displacement concerns.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-13/ai-angst-in-us-stocks-sends-global-money-chasing-asia-s-winners",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 4,
+      "systemic": 7
+    },
+    "weightedScore": 5.55,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Motley Fool",
+    "date": "Yesterday (11 hours ago)",
+    "title": "Prediction: This Artificial Intelligence (AI) Stock Will Outperform Nvidia in 2026",
+    "summary": "Taiwan Semiconductor Manufacturing (TSMC) stock has jumped over 43% in six months while Nvidia gained only 3%. TSMC is positioned to benefit from AI chip demand and expects nearly 30% revenue growth in 2026.",
+    "url": "https://www.fool.com/investing/2026/02/12/prediction-this-artificial-intelligence-ai-stock-w/",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 4,
+      "timeline": 5,
+      "systemic": 3
+    },
+    "weightedScore": 5.05,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "Yesterday (7 hours ago)",
+    "title": "Logistics Stocks Sink as AI Fear Trade Finds Latest Victim",
+    "summary": "Logistics stocks plunged as they became the latest victim of AI disruption fears. A small company's logistics platform announcement sent the Russell 3000 Trucking Index sliding 6.6%, with major players like CH Robinson falling 15%.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-12/logistics-stocks-plunge-as-latest-victim-in-ai-disruption-trade",
+    "scores": {
+      "capability": 4,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 3,
+      "systemic": 6
+    },
+    "weightedScore": 5.0,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Tech Startups",
+    "date": "Yesterday (17 hours ago)",
+    "title": "Top Tech News Today, February 12, 2026",
+    "summary": "A former Google leader launched an AI company targeting oil refineries and chemical plants, betting on specialized industrial AI. Samsung is offering high trade-in incentives for AI-focused devices ahead of its February 25 event.",
+    "url": "https://techstartups.com/2026/02/12/top-tech-news-today-february-12-2026/",
+    "scores": {
+      "capability": 5,
+      "economic": 6,
+      "irreversibility": 4,
+      "timeline": 4,
+      "systemic": 3
+    },
+    "weightedScore": 4.65,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "Today",
+    "title": "Investors' AI Worries Are Contradictory: Nomura's Wang",
+    "summary": "Nomura International's Julia Wang says markets are in uncharted territory with AI technology. She warns that significant volatility is likely ahead as investors navigate contradictory concerns about AI's impact.",
+    "url": "https://www.bloomberg.com/news/videos/2026-02-13/investors-ai-worries-are-contradictory-nomura-s-wang-video",
+    "scores": {
+      "capability": 2,
+      "economic": 6,
+      "irreversibility": 3,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 4.35,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "Yesterday",
+    "title": "'Old Economy' Is Hot Again, Propelled by Data and AI Backlash",
+    "summary": "Traditional transportation companies are rallying as investors pivot away from big tech. The Dow Jones Transportation Average is outperforming the S&P 500 by 13 percentage points amid the AI backlash affecting software companies.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-12/-old-economy-is-hot-again-propelled-by-data-and-ai-backlash",
+    "scores": {
+      "capability": 2,
+      "economic": 7,
+      "irreversibility": 3,
+      "timeline": 2,
+      "systemic": 6
+    },
+    "weightedScore": 4.35,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Pravda EN",
+    "date": "Today (5 hours ago)",
+    "title": "Russian president's press service uses AI \u2014 Kremlin",
+    "summary": "The Kremlin confirmed that Russia's presidential press service uses AI technologies in its work. Spokesman Dmitry Peskov noted that while some are wary of AI, he believes it will become accepted like previous technological innovations.",
+    "url": "https://news-pravda.com/world/2026/02/13/2072276.html",
+    "scores": {
+      "capability": 2,
+      "economic": 3,
+      "irreversibility": 4,
+      "timeline": 2,
+      "systemic": 5
+    },
+    "weightedScore": 3.1,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
