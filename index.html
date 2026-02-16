@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 15, 2026 at 06:48 UTC</p>
+                        <p>Last 24 Hours - Updated: February 16, 2026 at 07:00 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,120 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg",
+    "date": "February 16, 2026",
+    "title": "Blackstone to Lead $600 Million Investment in AI Firm Neysa",
+    "summary": "Blackstone Inc. plans to make an equity investment of up to $600 million in Indian AI cloud startup Neysa. This represents significant capital flowing into AI infrastructure in India.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-16/blackstone-to-lead-600-million-investment-in-ai-firm-neysa",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 4,
+      "timeline": 5,
+      "systemic": 4
+    },
+    "weightedScore": 5.25,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Tribune",
+    "date": "February 16, 2026",
+    "title": "USISPF joins India AI impact summit 2026 as official partner, launches AI task force",
+    "summary": "The U.S.-India Strategic Partnership Forum announces partnership for India AI Impact Summit 2026, leading largest U.S. industry delegation with over 100 companies. Signals deepening US-India cooperation on AI and trusted technology ecosystems.",
+    "url": "https://www.tribuneindia.com/news/ai-applications/usispf-joins-india-ai-impact-summit-2026-as-official-partner-launches-ai-task-force",
+    "scores": {
+      "capability": 3,
+      "economic": 5,
+      "irreversibility": 6,
+      "timeline": 4,
+      "systemic": 8
+    },
+    "weightedScore": 5.2,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "February 16, 2026",
+    "title": "India Seeks Role in Shaping AI Future With Summit of Tech Chiefs",
+    "summary": "India kicks off one of the world's largest AI summits with Prime Minister Modi seeking to position India in the race to develop frontier AI models. The summit brings together global tech leaders and policymakers.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-16/india-seeks-role-in-shaping-ai-future-with-summit-of-tech-chiefs",
+    "scores": {
+      "capability": 4,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 3,
+      "systemic": 7
+    },
+    "weightedScore": 5.1,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "News9Live",
+    "date": "February 16, 2026",
+    "title": "India AI Impact Summit 2026 Begins: PM Modi Inaugurates, Schedule, Guest List and Live Stream Details",
+    "summary": "Prime Minister Modi inaugurates the five-day India AI Impact Summit 2026 at Bharat Mandapam in New Delhi. Billed as first international AI summit hosted in Global South, bringing together world leaders and tech CEOs.",
+    "url": "https://www.news9live.com/technology/artificial-intelligence/global-ai-summit-india-startups-expo-2026-2931478",
+    "scores": {
+      "capability": 4,
+      "economic": 5,
+      "irreversibility": 5,
+      "timeline": 4,
+      "systemic": 7
+    },
+    "weightedScore": 5.0,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Business Standard",
+    "date": "February 16, 2026",
+    "title": "Which AI models will India unveil at 2026 Impact Summit: Details here",
+    "summary": "India's home-grown AI models ready for public release at summit, including projects by Sarvam AI for voice-based use. Multiple startups presenting innovations in education, healthcare, and AI-driven solutions.",
+    "url": "https://www.business-standard.com/technology/tech-news/artificial-intelligence-impact-summit-2026-indian-models-126021600187_1.html",
+    "scores": {
+      "capability": 6,
+      "economic": 4,
+      "irreversibility": 4,
+      "timeline": 5,
+      "systemic": 5
+    },
+    "weightedScore": 4.85,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
+    "date": "February 16, 2026",
+    "title": "Altman and Pichai among tech CEOs heading to India for major AI summit in a key market",
+    "summary": "Major tech CEOs including Sam Altman and Sundar Pichai heading to India for AI Impact Summit. India represents key market with young tech-forward consumers and huge talent pool for AI development.",
+    "url": "https://www.cnbc.com/2026/02/16/india-ai-impact-summit-tech-ceos-new-delhi.html",
+    "scores": {
+      "capability": 3,
+      "economic": 6,
+      "irreversibility": 4,
+      "timeline": 4,
+      "systemic": 6
+    },
+    "weightedScore": 4.6,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "February 16, 2026",
+    "title": "CNBC Daily Open: Muted U.S. CPI and cooling tensions with Iran give investors some comfort",
+    "summary": "Markets brace for more AI noise as AI Impact Summit begins in India with major AI leaders taking the stage. AI disruption fears continue affecting global stock markets across multiple sectors.",
+    "url": "https://www.cnbc.com/2026/02/16/cnbc-daily-open-muted-us-cpi-and-cooling-tensions-with-iran-give-investors-some-comfort.html",
+    "scores": {
+      "capability": 2,
+      "economic": 7,
+      "irreversibility": 3,
+      "timeline": 4,
+      "systemic": 6
+    },
+    "weightedScore": 4.4,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
