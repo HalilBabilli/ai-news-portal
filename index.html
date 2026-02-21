@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 20, 2026 at 06:53 UTC</p>
+                        <p>Last 24 Hours - Updated: February 21, 2026 at 06:38 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "CNBC",
+    "date": "February 20, 2026",
+    "title": "The Tech Download: China's AI surge \u2014 real threat or hype?",
+    "summary": "Microsoft President Brad Smith warns American tech companies should 'worry a little bit' about Chinese AI subsidies. Beijing supports AI companies with multi-billion-dollar funds and energy vouchers for compute. Competition shifts from model performance to value realization as Chinese open-weight models erode US commercial advantages.",
+    "url": "https://www.cnbc.com/2026/02/20/tech-download-newsletter-china-ai-race.html",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 5,
+      "systemic": 8
+    },
+    "weightedScore": 6.85,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "February 20, 2026",
+    "title": "Who's laughing now? China's humanoid robots go from viral stumbles to kung fu flips in one year",
+    "summary": "Chinese startup Unitree expects 10,000-20,000 humanoid robot shipments in 2026 after featuring prominently at Spring Festival Gala. Shows rapid advancement in Chinese robotics capabilities. Represents major progress from previous technical difficulties to commercial viability.",
+    "url": "https://www.cnbc.com/2026/02/20/china-humanoid-robots-spring-festival-gala-unitree-tesla-ai-race.html",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 6.4,
+    "primaryDriver": "timeline"
+  },
+  {
+    "source": "Solutions Review",
+    "date": "February 20, 2026",
+    "title": "Artificial Intelligence News for the Week of February 20; Updates from IBM, Infosys, Rackspace & More",
+    "summary": "Weekly AI news roundup covering various enterprise developments. TEKsystems reports 71% of organizations plan to increase AI spending, with productivity overtaking customer experience as top priority. Includes updates on Databricks agents, Tavus Phoenix-4 emotional AI, and FinOps survey showing 98% now manage AI spend.",
+    "url": "https://solutionsreview.com/artificial-intelligence-news-for-the-week-of-february-20-updates-from-ibm-infosys-rackspace-more/",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
