@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 23, 2026 at 07:01 UTC</p>
+                        <p>Last 24 Hours - Updated: February 24, 2026 at 06:57 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,72 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "TechCrunch",
+    "date": "February 22, 2026",
+    "title": "All the important news from the ongoing India AI Impact Summit",
+    "summary": "India hosts a four-day AI Impact Summit with 250,000 expected visitors, featuring executives from OpenAI, Anthropic, Nvidia, Microsoft, Google. Major announcements include India's $1.1 billion AI fund and Adani's $100 billion AI data center investment plan.",
+    "url": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 7.05,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "February 21, 2026",
+    "title": "Chaos, confusion and $200 billion dreams: What I saw at India's AI summit",
+    "summary": "India's AI Impact Summit aimed to attract $200 billion in AI investment over next two years. OpenAI announced partnership with Tata Consultancy Services' data center business, while Google announced Gemini AI partnerships with education institutions.",
+    "url": "https://www.cnbc.com/2026/02/21/ai-summit-india-tech.html",
+    "scores": {
+      "capability": 5,
+      "economic": 9,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.75,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "February 22, 2026",
+    "title": "Apple's Next Big Thing Is a Push Into Visual Artificial Intelligence",
+    "summary": "Apple CEO Tim Cook signals Visual Intelligence will be the defining feature of the company's push into wearable AI devices. Article discusses expectations for Apple's product launches during the week of March 2.",
+    "url": "https://www.bloomberg.com/news/newsletters/2026-02-22/apple-s-ai-wearables-push-what-to-expect-from-march-4-low-end-macbook-launch",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 6.25,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Tribune India",
+    "date": "February 24, 2026",
+    "title": "Navrachana University Hosts AI DAY 2026 to Promote Practical Understanding of Artificial Intelligence",
+    "summary": "Navrachana University hosted AI DAY 2026 with over 200 participants focusing on practical AI implementation beyond hype. Event addressed critical questions about where AI delivers measurable impact versus where automation suffices.",
+    "url": "https://www.tribuneindia.com/news/business/navrachana-university-hosts-ai-day-2026-to-promote-practical-understanding-of-artificial-intelligence",
+    "scores": {
+      "capability": 4,
+      "economic": 3,
+      "irreversibility": 2,
+      "timeline": 3,
+      "systemic": 4
+    },
+    "weightedScore": 3.25,
+    "primaryDriver": "capability"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
