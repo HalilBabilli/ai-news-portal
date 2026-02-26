@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: February 25, 2026 at 06:59 UTC</p>
+                        <p>Last 24 Hours - Updated: February 26, 2026 at 06:57 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "CNBC",
+    "date": "February 25, 2026",
+    "title": "First look at Nvidia's AI system Vera Rubin and how it beats Blackwell",
+    "summary": "Nvidia revealed details about its Vera Rubin AI superchip system, expected to ship in the second half of 2026. The system features 17,000 components, 100% liquid cooling, and is estimated to cost $3.5-4 million per rack.",
+    "url": "https://www.cnbc.com/2026/02/25/first-look-at-nvidias-ai-system-vera-rubin-and-how-it-beats-blackwell.html",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 5
+    },
+    "weightedScore": 6.95,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "February 24, 2026",
+    "title": "India's AI boom pushes firms to trade near-term revenue for users",
+    "summary": "Tech giants are testing whether India's massive AI user growth can translate into paying customers as free offers end. India became the world's largest market for generative AI app downloads in 2025 with 207% year-over-year growth.",
+    "url": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 5.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "OpenTools AI",
+    "date": "February 25, 2026",
+    "title": "OpenAI Appoints Arvind KC as New Chief People Officer",
+    "summary": "OpenAI has appointed Arvind KC as its new Chief People Officer as of February 24, 2026. This leadership change comes as the company continues to scale its operations and workforce.",
+    "url": "https://opentools.ai/news",
+    "scores": {
+      "capability": 2,
+      "economic": 4,
+      "irreversibility": 3,
+      "timeline": 3,
+      "systemic": 2
+    },
+    "weightedScore": 2.85,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
