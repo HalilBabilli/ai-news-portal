@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: March 09, 2026 at 06:58 UTC</p>
+                        <p>Last 24 Hours - Updated: March 10, 2026 at 06:44 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,24 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "ScienceDaily",
+    "date": "March 10, 2026",
+    "title": "AI Reads Brain MRIs in Seconds and Flags Emergencies",
+    "summary": "Researchers at the University of Michigan have created an AI system that can interpret brain MRI scans in just seconds, accurately identifying a wide range of neurological conditions and determining which cases need urgent care. The breakthrough could revolutionize emergency medicine by providing rapid diagnosis capabilities.",
+    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 7.25,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
