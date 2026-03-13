@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: March 12, 2026 at 06:51 UTC</p>
+                        <p>Last 24 Hours - Updated: March 13, 2026 at 06:50 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,72 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "The Motley Fool",
+    "date": "March 12, 2026",
+    "title": "Oracle Just Delivered Incredible News for Artificial Intelligence (AI) Investors",
+    "summary": "Oracle's fiscal Q3 2026 results showed strong revenue and earnings beats, driven by AI infrastructure demand. The company has $553 billion in remaining performance obligations, with $300 billion attributed to OpenAI contracts, addressing previous investor concerns.",
+    "url": "https://www.fool.com/investing/2026/03/12/oracle-incredible-news-artificial-intelligence-ai/",
+    "scores": {
+      "capability": 4,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.15,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "March 12, 2026",
+    "title": "Atlassian follows Block's footsteps and cuts staff in the name of AI",
+    "summary": "Atlassian laid off 10% of its workforce (around 1,600 people) as the company looks to funnel more funds to AI development. The company said this decision allows it to spend more funds on AI and enterprise sales while strengthening its finances.",
+    "url": "https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.85,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Transparency Coalition",
+    "date": "March 13, 2026",
+    "title": "AI Legislative Update: March 13, 2026",
+    "summary": "Washington and Utah passed major AI bills before adjournment. Virginia passed three AI bills including artificial intelligence fraud provisions and framework for AI system verification. Multiple states are advancing AI regulation including chatbot safety and deepfake protection bills.",
+    "url": "https://www.transparencycoalition.ai/news/ai-legislative-update-march13-2026",
+    "scores": {
+      "capability": 2,
+      "economic": 6,
+      "irreversibility": 8,
+      "timeline": 4,
+      "systemic": 9
+    },
+    "weightedScore": 5.7,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Defense World",
+    "date": "March 13, 2026",
+    "title": "Promising Artificial Intelligence Stocks To Follow Today \u2013 March 11th",
+    "summary": "MarketBeat identified Tempus AI, Upstart, and Hut 8 as the three AI stocks with highest dollar trading volume. These companies represent different AI applications from precision medicine to lending platforms to data center operations for digital assets and AI.",
+    "url": "https://www.defenseworld.net/2026/03/13/promising-artificial-intelligence-stocks-to-follow-today-march-11th.html",
+    "scores": {
+      "capability": 2,
+      "economic": 7,
+      "irreversibility": 3,
+      "timeline": 3,
+      "systemic": 4
+    },
+    "weightedScore": 4.15,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
