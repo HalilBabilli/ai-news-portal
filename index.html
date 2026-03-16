@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: March 15, 2026 at 06:53 UTC</p>
+                        <p>Last 24 Hours - Updated: March 16, 2026 at 07:13 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Seoul Economic Daily",
+    "date": "March 16, 2026",
+    "title": "Nvidia Set to Unveil Inference Chip at GTC 2026",
+    "summary": "NVIDIA is expected to unveil a dedicated inference chip at GTC 2026 that could reshape the AI semiconductor landscape. The new chip focuses on AI inference rather than model training, competing with Google and Amazon's specialized inference chips.",
+    "url": "https://en.sedaily.com/international/2026/03/16/nvidia-set-to-unveil-inference-chip-at-gtc-2026-20260316",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 7.55,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "NVIDIA Blog",
+    "date": "12 hours ago",
+    "title": "NVIDIA GTC 2026: Live Updates on What's Next in AI",
+    "summary": "NVIDIA GTC 2026 begins with Jensen Huang's keynote covering the full stack of chips, software, models and applications. The conference spans topics from physical AI and AI factories to agentic AI and inference.",
+    "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 5
+    },
+    "weightedScore": 6.95,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "March 14, 2026",
+    "title": "Meta reportedly considering layoffs that could affect 20% of the company",
+    "summary": "Meta is considering major layoffs affecting 20% or more of its workforce to offset aggressive AI infrastructure spending. The cuts would help fund AI-related acquisitions and hiring as the company restructures around artificial intelligence capabilities.",
+    "url": "https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.95,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
