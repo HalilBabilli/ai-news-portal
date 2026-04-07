@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: April 06, 2026 at 07:25 UTC</p>
+                        <p>Last 24 Hours - Updated: April 07, 2026 at 07:12 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,72 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "ScienceDaily",
+    "date": "April 05, 2026",
+    "title": "AI breakthrough cuts energy use by 100x while boosting accuracy",
+    "summary": "Tufts University researchers unveiled a neuro-symbolic AI approach that could slash AI energy use by up to 100x while improving accuracy. The system combines neural networks with human-like symbolic reasoning, helping robots think more logically instead of relying on brute-force trial and error, addressing AI's massive energy consumption.",
+    "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm",
+    "scores": {
+      "capability": 9,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 9,
+      "systemic": 7
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
+    "date": "April 05, 2026",
+    "title": "'Silent killers': How AI start-ups are trying to solve one of the retail industry's biggest problems",
+    "summary": "Fashion retailers are increasingly turning to AI-powered virtual try-on technology to reduce product returns, with companies like Catches projecting 10% increase in conversions. Google's virtual try-on tech will be accessible directly within product search results starting April 30, marking significant progress in AI retail applications.",
+    "url": "https://www.cnbc.com/2026/04/05/ai-retail-start-ups-virtual-try-on-tech-margins.html",
+    "scores": {
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 5.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "April 06, 2026",
+    "title": "OpenAI Advocates Electric Grid, Safety Net Spending for New AI Era",
+    "summary": "OpenAI released policy recommendations for AI superintelligence era including creation of public wealth fund, fast-response social safety net programs, and speedier electrical grid development. The proposals aim to help navigate AI-fueled upheaval and keep people first during the intelligence age.",
+    "url": "https://www.bloomberg.com/news/articles/2026-04-06/openai-advocates-electric-grid-safety-net-spending-for-new-ai-era",
+    "scores": {
+      "capability": 3,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 4,
+      "systemic": 8
+    },
+    "weightedScore": 5.5,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "April 06, 2026",
+    "title": "OpenAI, Anthropic, Google Unite to Combat Model Copying in China",
+    "summary": "Rival AI companies OpenAI, Anthropic, and Google are working together through the Frontier Model Forum to detect adversarial distillation attempts by Chinese competitors. The firms are sharing information to clamp down on Chinese companies extracting results from US AI models to gain competitive advantage.",
+    "url": "https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china",
+    "scores": {
+      "capability": 2,
+      "economic": 6,
+      "irreversibility": 7,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 5.4,
+    "primaryDriver": "irreversibility"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
