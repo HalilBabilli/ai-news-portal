@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: April 22, 2026 at 07:28 UTC</p>
+                        <p>Last 24 Hours - Updated: April 23, 2026 at 07:47 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,72 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "TechCrunch",
+    "date": "April 22, 2026",
+    "title": "Google Cloud launches two new AI chips to compete with Nvidia",
+    "summary": "Google Cloud announces its eighth generation of custom-built AI chips (TPUs) will be split into two different models. The new tensor processing units represent Google's latest effort to compete directly with Nvidia's dominance in the AI chip market.",
+    "url": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 7.6,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "April 22, 2026",
+    "title": "AI Pioneers Back Startup Building Models to Predict Events",
+    "summary": "Sooth Labs, founded by former Meta employees, raises $50 million to build AI models that forecast geopolitical and market events. Felicis Ventures leads the round valuing the startup at $335 million, with backing from AI pioneers Yann LeCun and Google's Jeff Dean.",
+    "url": "https://www.bloomberg.com/news/articles/2026-04-22/ai-pioneers-back-startup-building-models-to-predict-events",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.3,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "April 22, 2026",
+    "title": "MIT Technology Review Launches New List of 10 Things That Matter in AI Right Now",
+    "summary": "MIT Technology Review announces its annual list focusing specifically on AI developments, featuring World Models, military AI integration, and humanoid robot data collection. The list highlights emerging trends like AI agent teams and the transformation of chatbots into new distribution platforms.",
+    "url": "https://www.prnewswire.com/news-releases/mit-technology-review-launches-new-list-of-10-things-that-matter-in-ai-right-now-302750238.html",
+    "scores": {
+      "capability": 6,
+      "economic": 5,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 5.6,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "AI and News",
+    "date": "April 23, 2026",
+    "title": "Live AI Show Showcases Industry Applications at Data Center World 2026",
+    "summary": "Data Center World conference concludes with focus on AI infrastructure needs and industry applications. The event emphasized critical decisions facing global leaders regarding AI collaboration versus rivalry, with discussions on operational efficiency improvements.",
+    "url": "https://www.aiandnews.com/blog/latest-ai-news-april-2026-6/",
+    "scores": {
+      "capability": 4,
+      "economic": 6,
+      "irreversibility": 3,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 4.9,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
