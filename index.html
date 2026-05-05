@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 04, 2026 at 08:25 UTC</p>
+                        <p>Last 24 Hours - Updated: May 05, 2026 at 08:05 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "TechCrunch",
+    "date": "14 hours ago",
+    "title": "In Harvard study, AI offered more accurate emergency room diagnoses than two human doctors",
+    "summary": "A new study examines how large language models perform in medical contexts, including real emergency room cases where at least one model seemed more accurate than human doctors. The research demonstrates AI's potential in healthcare diagnostics.",
+    "url": "https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 6.65,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "13 hours ago",
+    "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+    "summary": "Both Anthropic and OpenAI have partnered with asset managers to more aggressively market their enterprise AI products. The joint ventures focus on deploying enterprise AI services at scale.",
+    "url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.15,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "15 hours ago",
+    "title": "'This is fine' creator says AI startup stole his art",
+    "summary": "KC Green, creator of the 'This is fine' meme, accused AI startup Artisan of stealing his artwork for a subway advertising campaign without permission. The controversy highlights ongoing issues with AI companies using copyrighted content.",
+    "url": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
+    "scores": {
+      "capability": 2,
+      "economic": 3,
+      "irreversibility": 4,
+      "timeline": 3,
+      "systemic": 5
+    },
+    "weightedScore": 3.2,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
