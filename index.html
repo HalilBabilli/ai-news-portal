@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 10, 2026 at 08:04 UTC</p>
+                        <p>Last 24 Hours - Updated: May 11, 2026 at 09:34 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "CNBC",
+    "date": "May 11, 2026 (7 hours ago)",
+    "title": "Here's how artificial intelligence is changing boardrooms",
+    "summary": "IBM report shows 76% of companies have appointed chief AI officers, up from 26% in 2025. AI is driving organizational shifts comparable to industrial and digital revolutions. 93.2% of survey respondents cite cultural challenges as the main hurdle to AI adoption.",
+    "url": "https://www.cnbc.com/2026/05/11/heres-how-artificial-intelligence-is-changing-boardrooms.html",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 6.05,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "May 11, 2026 (8 hours ago)",
+    "title": "Alphabet Plans Debut Yen Bond Sale as AI Race Accelerates",
+    "summary": "Alphabet is issuing yen bonds for the first time to help fund AI investments as competition intensifies. The company raised capital expenditure outlook to $190 billion, double what it spent in 2025. Google parent is widening funding sources as it dominates nearly every aspect of AI.",
+    "url": "https://www.bloomberg.com/news/articles/2026-05-11/alphabet-plans-debut-yen-bond-sale-as-ai-race-accelerates",
+    "scores": {
+      "capability": 3,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 4
+    },
+    "weightedScore": 5.85,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNN",
+    "date": "May 10, 2026 (1 day ago)",
+    "title": "AI isn't actually 'taking' your job. Here's what's happening instead",
+    "summary": "AI was the top reason companies cited for job cuts in April for the second consecutive month. However, companies are using AI to automate parts of jobs rather than replace entire positions. Business leaders are recalibrating existing jobs around responsibilities that can only be done by humans.",
+    "url": "https://www.cnn.com/2026/05/10/tech/ai-taking-jobs",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 3,
+      "systemic": 8
+    },
+    "weightedScore": 5.65,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
