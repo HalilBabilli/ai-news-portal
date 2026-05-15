@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 14, 2026 at 08:34 UTC</p>
+                        <p>Last 24 Hours - Updated: May 15, 2026 at 08:45 UTC</p>
                     </div>
                 </div>
             </div>
@@ -195,20 +195,84 @@
     <script>
         const newsData = [
   {
-    "source": "TechNode",
+    "source": "CNBC",
+    "date": "Yesterday",
+    "title": "Google says it likely thwarted effort by hacker group to use AI for 'mass exploitation event'",
+    "summary": "Google's Threat Intelligence Group reported thwarting hackers who used AI models to plan a mass vulnerability exploitation operation. The hackers used AI to find and exploit a zero-day vulnerability to bypass two-factor authentication, marking a significant escalation in AI-assisted cyberattacks.",
+    "url": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 7.45,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
     "date": "May 14, 2026",
-    "title": "Baidu Create 2026: CEO says AI focus is moving from models to AI agents, foresees rise of super individuals",
-    "summary": "At Baidu's Create 2026 conference, CEO Robin Li announced the shift from large model competition to AI agent competition. The company unveiled several agent-focused AI products including DuMate and launched the concept of 'super individuals' working with AI agents.",
-    "url": "https://technode.com/2026/05/14/baidu-create-2026-ceo-says-ai-is-moving-from-model-competition-to-ai-agent-era-foresees-rise-of-super-individuals/",
+    "title": "Cerebras IPO mints two billionaires, sets stage for potential AI wave",
+    "summary": "AI chipmaker Cerebras went public with shares soaring 68% on debut, reaching a market cap of $95 billion. CEO Andrew Feldman and CTO Sean Lie became billionaires, with the company having a $20 billion deal with OpenAI for computing capacity.",
+    "url": "https://www.cnbc.com/2026/05/14/cerebras-ipo-mints-two-billionaires-sets-stage-for-potential-ai-wave.html",
     "scores": {
       "capability": 7,
-      "economic": 6,
+      "economic": 9,
       "irreversibility": 6,
-      "timeline": 5,
-      "systemic": 4
+      "timeline": 6,
+      "systemic": 7
     },
-    "weightedScore": 6.15,
+    "weightedScore": 7.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "May 14, 2026",
+    "title": "U.S. China AI talks: Bessent says U.S. leads, safety protocol planned",
+    "summary": "U.S. Treasury Secretary Scott Bessent announced that the U.S. and China will establish a protocol for AI safety during Trump's meeting with Xi Jinping in Beijing. Bessent said the talks are possible because the U.S. is 'in the lead' in AI development and expects major breakthroughs from Google's Gemini and OpenAI.",
+    "url": "https://www.cnbc.com/2026/05/14/us-china-ai-rules-bessent-us-lead.html",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 7,
+      "systemic": 9
+    },
+    "weightedScore": 7.35,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "The Hacker News",
+    "date": "Yesterday",
+    "title": "OpenAI Launches Daybreak for AI-Powered Vulnerability Detection and Patch Validation",
+    "summary": "OpenAI launched Daybreak, a new cybersecurity initiative combining AI capabilities with Codex Security to help organizations identify and patch vulnerabilities before attackers exploit them. The platform aims to bring secure code review and threat modeling into everyday development workflows.",
+    "url": "https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.9,
     "primaryDriver": "capability"
+  },
+  {
+    "source": "ABC News",
+    "date": "May 15, 2026",
+    "title": "Musk v. Altman live updates: Closing arguments after testimony wraps up, deliberation ahead",
+    "summary": "The high-stakes trial between Elon Musk and Sam Altman over OpenAI's founding mission moved to closing arguments. The lawsuit accuses Altman of betraying OpenAI's nonprofit origins by transforming it into a capitalistic venture now valued at $852 billion.",
+    "url": "https://abc7news.com/live-updates/elon-musk-sam-altman-live-updates-microsoft-ceo-satya-nadella-testify-week-3-trial-begins/19080697/",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.9,
+    "primaryDriver": "irreversibility"
   }
 ];
         let currentPage = 0;
