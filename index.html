@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 18, 2026 at 09:56 UTC</p>
+                        <p>Last 24 Hours - Updated: May 19, 2026 at 09:37 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,56 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Asanify",
+    "date": "May 19, 2026",
+    "title": "AI News Digest, May 19, 2026: AI SDK Consolidation Hits the Toolchain",
+    "summary": "Anthropic acquired Stainless for $300M, a startup that generates SDKs for major AI companies including OpenAI, Google, Meta. HR Executive reports 2026 as year copilots get replaced by superagents. EU delays AI Act high-risk rules by 16 months to December 2027.",
+    "url": "https://asanify.com/blog/news/ai-sdk-consolidation-may-19-2026/",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.35,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "OpenAI",
+    "date": "May 18, 2026",
+    "title": "A new personal finance experience in ChatGPT",
+    "summary": "OpenAI launched ChatGPT for Personal Finance to US Pro users. The feature connects via Plaid to 12,000+ banks including Chase, Schwab, and Fidelity for read-only financial data. It cannot move money but provides spending, holdings, and liability views.",
+    "url": "https://openai.com/news/",
+    "scores": {
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 5,
+      "systemic": 5
+    },
+    "weightedScore": 5.65,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Techmeme",
+    "date": "May 18, 2026",
+    "title": "California jury sides with OpenAI over Musk lawsuit",
+    "summary": "A California jury unanimously ruled against Elon Musk's lawsuit against OpenAI after less than two hours of deliberation. The jury found that Musk filed the lawsuit too late and rejected his claims. Multiple sources reported the quick dismissal of the case.",
+    "url": "https://www.techmeme.com/",
+    "scores": {
+      "capability": 2,
+      "economic": 4,
+      "irreversibility": 3,
+      "timeline": 2,
+      "systemic": 3
+    },
+    "weightedScore": 2.85,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
