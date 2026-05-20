@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 19, 2026 at 09:37 UTC</p>
+                        <p>Last 24 Hours - Updated: May 20, 2026 at 09:26 UTC</p>
                     </div>
                 </div>
             </div>
@@ -195,52 +195,68 @@
     <script>
         const newsData = [
   {
-    "source": "Asanify",
+    "source": "TechCrunch",
     "date": "May 19, 2026",
-    "title": "AI News Digest, May 19, 2026: AI SDK Consolidation Hits the Toolchain",
-    "summary": "Anthropic acquired Stainless for $300M, a startup that generates SDKs for major AI companies including OpenAI, Google, Meta. HR Executive reports 2026 as year copilots get replaced by superagents. EU delays AI Act high-risk rules by 16 months to December 2027.",
-    "url": "https://asanify.com/blog/news/ai-sdk-consolidation-may-19-2026/",
+    "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+    "summary": "Google's Gemini 3.5 Flash represents a shift from conversational AI to agentic AI that can independently execute coding pipelines and build operating systems from scratch. It outperforms Gemini 3.1 Pro on coding and agentic benchmarks.",
+    "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
     "scores": {
-      "capability": 5,
-      "economic": 8,
+      "capability": 9,
+      "economic": 6,
       "irreversibility": 7,
-      "timeline": 6,
+      "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 6.35,
-    "primaryDriver": "economic"
+    "weightedScore": 7.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MarkTechPost",
+    "date": "May 20, 2026",
+    "title": "Google Introduces Gemini 3.5 Flash at I/O 2026: A Faster and Cheaper Model for AI Agents and Coding",
+    "summary": "Gemini 3.5 Flash scores 76.2% on Terminal-Bench 2.1 coding evaluation and delivers 4x faster output tokens than comparable frontier models. Features include 1M+ context window and managed agents via Gemini API.",
+    "url": "https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/",
+    "scores": {
+      "capability": 8,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 5
+    },
+    "weightedScore": 7.35,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "CNBC",
+    "date": "May 19, 2026",
+    "title": "Google unveils AI model Gemini 3.5 and AI agent Gemini Spark",
+    "summary": "Google launched Gemini 3.5 Flash with 4x faster output and frontier-level intelligence at lower cost. The company also announced Gemini Spark, a 24/7 AI agent, and Omni for video generation at I/O 2026.",
+    "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 7.25,
+    "primaryDriver": "capability"
   },
   {
     "source": "OpenAI",
-    "date": "May 18, 2026",
-    "title": "A new personal finance experience in ChatGPT",
-    "summary": "OpenAI launched ChatGPT for Personal Finance to US Pro users. The feature connects via Plaid to 12,000+ banks including Chase, Schwab, and Fidelity for read-only financial data. It cannot move money but provides spending, holdings, and liability views.",
+    "date": "May 19, 2026",
+    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+    "summary": "OpenAI announced new content verification initiatives including SynthID watermarking integration and enhanced AI-generated image identification tools. The move addresses growing concerns about AI-generated content authenticity.",
     "url": "https://openai.com/news/",
     "scores": {
-      "capability": 6,
-      "economic": 7,
-      "irreversibility": 4,
-      "timeline": 5,
-      "systemic": 5
-    },
-    "weightedScore": 5.65,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Techmeme",
-    "date": "May 18, 2026",
-    "title": "California jury sides with OpenAI over Musk lawsuit",
-    "summary": "A California jury unanimously ruled against Elon Musk's lawsuit against OpenAI after less than two hours of deliberation. The jury found that Musk filed the lawsuit too late and rejected his claims. Multiple sources reported the quick dismissal of the case.",
-    "url": "https://www.techmeme.com/",
-    "scores": {
-      "capability": 2,
+      "capability": 5,
       "economic": 4,
-      "irreversibility": 3,
-      "timeline": 2,
-      "systemic": 3
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 7
     },
-    "weightedScore": 2.85,
-    "primaryDriver": "economic"
+    "weightedScore": 5.95,
+    "primaryDriver": "irreversibility"
   }
 ];
         let currentPage = 0;
