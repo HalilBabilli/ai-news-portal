@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: May 30, 2026 at 08:24 UTC</p>
+                        <p>Last 24 Hours - Updated: May 31, 2026 at 08:41 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,88 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Bloomberg",
+    "date": "May 30, 2026",
+    "title": "SoftBank to Build AI Data Centers in France With \u20ac75 Billion Investment",
+    "summary": "SoftBank Group plans to invest as much as \u20ac75 billion ($87 billion) to build 5 gigawatts of artificial intelligence data center capacity in France. The company says France is poised to become a top European hub for AI infrastructure.",
+    "url": "https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say",
+    "scores": {
+      "capability": 7,
+      "economic": 9,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 7.55,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "May 30, 2026",
+    "title": "The groupthink boom: what three top VCs really think about the AI frenzy",
+    "summary": "Three quarters of all venture capital raised over the last year went into five companies, according to venture capitalists discussing extreme groupthink in AI investing. The discussion highlights concerns about concentration of AI investment and FOMO-driven funding decisions.",
+    "url": "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Yahoo Finance",
+    "date": "May 29, 2026",
+    "title": "Stock Market News: AI-driven tech growth supports record highs",
+    "summary": "Wall Street closed at record highs driven by AI-focused tech growth and healthcare stocks. The S&P 500 and Nasdaq reached new peaks as investors remained focused on long-term AI growth potential despite inflation concerns.",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-may-29-132100817.html",
+    "scores": {
+      "capability": 4,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 5.7,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "The Motley Fool",
+    "date": "May 31, 2026",
+    "title": "These Artificial Intelligence (AI) Stocks Have Crushed Nvidia in 2026 With Gains of 67% and 121%",
+    "summary": "Lumentum Holdings and Applied Materials have significantly outperformed Nvidia in 2026, with gains of 121% and 67% respectively. Both companies benefit from massive investments in AI infrastructure, particularly optical components and semiconductor equipment.",
+    "url": "https://www.fool.com/investing/2026/05/30/these-artificial-intelligence-ai-stocks-have-crush/",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 5.55,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "May 30, 2026",
+    "title": "Meta is reportedly developing an AI pendant",
+    "summary": "Meta is developing an AI-powered pendant that it plans to start testing in the next year, building on the work of Limitless, an AI device startup that Meta acquired in 2025. The pendant would allow users to record conversations and builds on previous AI wearable efforts.",
+    "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
+    "scores": {
+      "capability": 6,
+      "economic": 4,
+      "irreversibility": 3,
+      "timeline": 4,
+      "systemic": 2
+    },
+    "weightedScore": 4.35,
+    "primaryDriver": "capability"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
