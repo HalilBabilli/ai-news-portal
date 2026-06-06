@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: June 05, 2026 at 09:40 UTC</p>
+                        <p>Last 24 Hours - Updated: June 06, 2026 at 08:31 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,184 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Build Fast with AI",
+    "date": "June 06, 2026",
+    "title": "ChatGPT Dreaming V3 Memory Architecture Launch",
+    "summary": "OpenAI launched its most significant memory upgrade since the original ChatGPT rollout. The new Dreaming V3 architecture began reaching ChatGPT Plus and Pro users on June 4, 2026, featuring automatic background synthesis that catalogues preferences, constraints, and time-sensitive context.",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 4
+    },
+    "weightedScore": 6.45,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Build Fast with AI",
+    "date": "June 06, 2026",
+    "title": "Great American AI Act Discussion Draft Unveiled",
+    "summary": "Representatives Jay Obernolte and Lori Trahan unveiled a 269-page discussion draft of the Great American Artificial Intelligence Act. The bill proposes a three-year preemption of all state AI laws, including Colorado's AI Act scheduled to take effect June 30.",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
+    "scores": {
+      "capability": 3,
+      "economic": 7,
+      "irreversibility": 9,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 6.35,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "Build Fast with AI",
+    "date": "June 06, 2026",
+    "title": "Alibaba Qwen 3.7 Max Challenges Claude Opus on Cost Efficiency",
+    "summary": "Alibaba's Qwen 3.7 Max is drawing serious developer attention as a frontier-level model that matches or beats Claude Opus 4.7 on agentic benchmarks. It offers roughly half the input cost and quarter of the output cost compared to Claude models.",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 4,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 6.35,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "June 05, 2026",
+    "title": "Apple's WWDC 2026 AI Strategy Preview",
+    "summary": "Apple will unveil a new artificial intelligence strategy at WWDC on Monday, attempting a turnaround after its first AI rollout was plagued by subpar technology. The company will introduce an overhauled Siri and new AI capabilities across all devices.",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-05/wwdc-2026-preview-ios-27-siri-ai-features-macos-27-more-apple-will-announce",
+    "scores": {
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 5.95,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "June 05, 2026",
+    "title": "San Francisco's AI-Powered Economic Comeback",
+    "summary": "Analysis shows San Francisco capturing around 40% of global AI venture capital, emerging as the undisputed AI capital. Both OpenAI and Anthropic are planning IPOs that will bring enormous wealth to thousands of San Francisco employees.",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-06-05/san-francisco-is-making-an-ai-powered-comeback",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.95,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Build Fast with AI",
+    "date": "June 06, 2026",
+    "title": "OpenAI Grants EU Access to GPT-5.5-Cyber Model",
+    "summary": "OpenAI granted the European Union access to GPT-5.5-Cyber, a variation designed for cybersecurity applications. The model is rolling out in limited preview to vetted cybersecurity teams, EU businesses, and government institutions.",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
+    "scores": {
+      "capability": 6,
+      "economic": 5,
+      "irreversibility": 6,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Tech Startups",
+    "date": "June 05, 2026",
+    "title": "Supabase Achieves $10.5 Billion Valuation on Vibe-Coding Trend",
+    "summary": "AI-focused startup Supabase achieved a $10.5 billion valuation following strong investor interest driven by the emerging 'vibe-coding' trend. The funding reflects growing enthusiasm for tools that democratize AI development using natural language.",
+    "url": "https://techstartups.com/2026/06/05/top-tech-news-today-june-5-2026/",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 3,
+      "timeline": 5,
+      "systemic": 6
+    },
+    "weightedScore": 5.5,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "June 05, 2026",
+    "title": "Emerging Markets Present Next Big AI Investment Opportunity",
+    "summary": "Bloomberg analysis suggests emerging markets have a compelling AI story with steep discounts to developed-market peers. EM indexes have around 40% tech exposure, providing significant AI-related investment opportunities beyond US companies.",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-06-05/what-if-the-next-big-ai-trade-is-in-emerging-markets",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 4,
+      "timeline": 4,
+      "systemic": 6
+    },
+    "weightedScore": 5.25,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "NeuralBuddies",
+    "date": "June 05, 2026",
+    "title": "OpenAI Codex Surpasses 5 Million Weekly Active Users",
+    "summary": "OpenAI launched new Codex tools including six plug-ins for data analytics, creative production, and other domains. Codex has passed 5 million weekly active users, up more than 6x since the February desktop app launch.",
+    "url": "https://www.neuralbuddies.com/p/ai-news-recap-june-5-2026",
+    "scores": {
+      "capability": 6,
+      "economic": 6,
+      "irreversibility": 3,
+      "timeline": 5,
+      "systemic": 4
+    },
+    "weightedScore": 5.1,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Tech Startups",
+    "date": "June 05, 2026",
+    "title": "Meta Builds Temporary AI Data Centers Using Tent Structures",
+    "summary": "Meta is building temporary data centers using tent structures near New Albany, Ohio, to bring AI compute capacity online more quickly while permanent data centers are under construction. The strategy mirrors tactics previously used by Tesla.",
+    "url": "https://techstartups.com/2026/06/05/top-tech-news-today-june-5-2026/",
+    "scores": {
+      "capability": 4,
+      "economic": 6,
+      "irreversibility": 3,
+      "timeline": 8,
+      "systemic": 3
+    },
+    "weightedScore": 5.0,
+    "primaryDriver": "timeline"
+  },
+  {
+    "source": "NeuralBuddies",
+    "date": "June 05, 2026",
+    "title": "Meta AI Support Bot Exploited in Instagram Account Heists",
+    "summary": "Reports emerged that pro-Iran hackers used Meta's AI support bot to seize Instagram accounts, including those of the Obama White House. The exploit combined password resets, VPNs, and bot manipulation, with defaced handles worth over $500,000.",
+    "url": "https://www.neuralbuddies.com/p/ai-news-recap-june-5-2026",
+    "scores": {
+      "capability": 4,
+      "economic": 5,
+      "irreversibility": 5,
+      "timeline": 3,
+      "systemic": 8
+    },
+    "weightedScore": 5.0,
+    "primaryDriver": "systemic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
