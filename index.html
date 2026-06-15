@@ -114,7 +114,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>İş Dünyası AI <span>Radar</span></h1>
-                        <p>Last 24 Hours - Updated: June 14, 2026 at 09:29 UTC</p>
+                        <p>Last 24 Hours - Updated: June 15, 2026 at 11:58 UTC</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,72 @@
         </footer>
     </div>
     <script>
-        const newsData = [];
+        const newsData = [
+  {
+    "source": "Unrot.co",
+    "date": "17 hours ago",
+    "title": "AI News Today June 15 2026: Top 10 AI Stories",
+    "summary": "Claude Fable 5 and Mythos 5 remain offline after US export controls. OpenAI discontinued Sora after burning $15M/day against $2.1M lifetime revenue. US government using ChatGPT to audit Medicaid for $100-200B in waste and fraud.",
+    "url": "https://unrot.co/blogs/ai-news-today-june-15-2026",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 7
+    },
+    "weightedScore": 7.0,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "June 15, 2026",
+    "title": "Anthropic Export Ban Deepens Fears About US Stranglehold on AI",
+    "summary": "The US Department of Commerce issued export control directives affecting Anthropic's Claude Fable 5 and Claude Mythos 5 models. This has raised concerns globally about US control over AI infrastructure and sparked debates about over-reliance on specific AI models.",
+    "url": "https://www.bloomberg.com/news/newsletters/2026-06-15/anthropic-export-ban-deepens-fears-about-us-stranglehold-on-ai",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 9,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 6.85,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "BuildFastWithAI",
+    "date": "18 hours ago",
+    "title": "AI News Today - June 15, 2026: 16 Biggest Stories",
+    "summary": "Comprehensive roundup including Anthropic's revenue reaching $47 billion annualized (up from $9 billion at end of 2025), IPO preparations by both Anthropic and OpenAI, and multi-provider API strategies to avoid single-point failures from government actions.",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-15-2026",
+    "scores": {
+      "capability": 4,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.7,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Bloomberg",
+    "date": "June 15, 2026",
+    "title": "The AI Jobs Crisis No One Is Talking About",
+    "summary": "Analysis of conflicting narratives from AI company leaders about employment impacts. Anthropic CEO Dario Amodei previously warned AI would eliminate 50% of entry-level white-collar jobs within five years, but now emphasizes productivity gains instead.",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-06-15/the-ai-jobs-crisis-no-one-is-talking-about",
+    "scores": {
+      "capability": 2,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 8
+    },
+    "weightedScore": 6.35,
+    "primaryDriver": "economic"
+  }
+];
         let currentPage = 0;
         const itemsPerPage = 5;
         function renderNews() {
